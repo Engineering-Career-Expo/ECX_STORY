@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: white;
+}
+
+.header {
+  background: url(../images/Rectangle\ 93.png);
+  height: 65vh;
+  max-height: 500px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
+.header::before,
+.team-img::before {
+  width: 100%;
+  content: "";
+  height: 100%;
+  background-color: rgba(0, 14, 45, 0.63);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-text {
+  position: absolute;
+  width: 70%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 10;
+  padding: 2rem auto;
+}
+.header-text h1 {
+  font-size: 1.8rem;
+}
+.header-text p {
+  font-size: 0.75rem;
+}
+
+.word {
+  color: #6f6f6f;
+}
+
+.word1 {
+  color: white;
+  font-size: 23px;
+}
+.upto {
+  text-align: center;
+  width: 85vw;
+  margin: 1.5rem auto;
+}
+
+.btn {
+  width: 40%;
+  background-color: rgba(254, 64, 59, 1);
+  float: left;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0;
+  margin-bottom: 1.4rem !important;
+}
+
+.cardcontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2rem auto;
+}
+.cards {
+  border-radius: 15px;
+  width: 80%;
+  height: auto;
+  box-shadow: -1px 1px 3px 1px #5353535b;
+  margin: 1.5rem auto;
+  padding-bottom: 0.6rem;
+}
+.cards h5 {
+  font-weight: 600;
+}
+
+.cards img {
+  height: 40%;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.cards,
+.cards-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards-info,
+.card-text {
+  margin: 1rem;
+  text-align: left;
+  line-height: 1;
+}
+
+.cardbtn {
+  width: 40vw;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0 0.6rem;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  background: #38affe;
+  font-weight: bold;
+  color: white;
+  transition: 0.5s;
+}
+.cardbtn:hover {
+  background-color: #3a3939;
+}
+
+.gallerycontainer {
+  text-align: center;
+}
+
+.rows {
+  width: 95%;
+  margin: 10px auto;
+  text-align: center;
+  display: flex;
+}
+#ecx1,
+#ecx5,
+#ecx6 {
+  display: none;
+}
+
+.rows a {
+  width: 30%;
+  align-self: center;
+}
+.m1 {
+  width: 58%;
+}
+.m2 {
+  width: 42%;
+}
+#ecx1 {
+  background-image: url(../images/Rectangle\ 17.png);
+}
+
+#ecx2 {
+  background-image: url(../images/Rectangle\ 6.png);
+}
+#ecx3 {
+  background-image: url(../images/Rectangle\ 26.png);
+}
+#ecx4 {
+  background-image: url(../images/Rectangle\ 23.png);
+}
+#ecx5 {
+  background-image: url(../images/Rectangle\ 20.png);
+}
+#ecx6 {
+  background-image: url(../images/Welcome\ Image\ 2.png);
+}
+
+.griditems {
+  height: 40vh;
+  border-radius: 10px;
+  margin: 15px;
+  transition: 1s;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.testimonialcontainer {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.carousel-wrapper {
+  width: 95vw;
+  margin: auto;
+  height: 100%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  width: 10%;
+  height: 70%;
+  z-index: 20;
+  opacity: 1;
+}
+.carousel-control-prev {
+  left: -5rem;
+}
+.carousel-control-next {
+  right: -5rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../images/arrow-right.svg);
+}
+.carousel-control-prev-icon {
+  background-image: url(../images/arrow-left.svg);
+}
+.carousel-item,
+video {
+  width: 100%;
+  transition: 1s ease;
+}
+.carousel-indicators li {
+  position: relative;
+  background-color: rgb(27, 27, 27);
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  z-index: 20;
+  bottom: -4rem;
+}
+
+.topstd {
+  display: flex;
+  flex-direction: row;
+}
+
+.ol {
+  color: black;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.twitter-card,
+.student-card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin: 2rem auto;
+  border-radius: 15px;
+}
+
+.student-card {
+  padding: 0.4rem 0.8rem 1rem 0.8rem;
+  box-shadow: -1px 1px 3px #fe413b5b;
+}
+
+.twitter-card {
+  box-shadow: -1px 1px 3px #00a6ff5d;
+  padding: 0.8rem;
+}
+.card-text {
+  font-size: 0.5rem;
+  line-height: 1.5;
+}
+
+.testimonial-container img {
+  border-radius: 50%;
+}
+
+.avatar-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.info-text {
+  padding-left: 0.3rem;
+}
+
+.info-text p {
+  font-size: 0.5rem;
+}
+
+.info-text > h3 {
+  font-size: 0.6rem;
+}
+
+.student-card img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -1.2rem;
+  left: 0;
+}
+.twitter-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.twittercontainer {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.container {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.team-img {
+  height: 50vh;
+  width: 90%;
+  margin: auto;
+  background-image: url(../images/Rectangle\ 17.png);
+  position: relative;
+}
+.team-img::before {
+  background-color: rgba(0, 14, 45, 0.4);
+  border-radius: 10px;
+}
+.btncont {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .header-text h1 {
+    font-size: 3.2rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+  }
+  .cards {
+    width: 30%;
+  }
+  .cardbtn {
+    width: 25vw;
+    font-size: 1.2rem;
+  }
+  .student-card img {
+    width: 105px;
+    height: 105px;
+    position: relative;
+    left: -1.5rem;
+  }
+  .twitter-card img {
+    width: 70px;
+    height: 70px;
+  }
+  .twitter-card,
+  .student-card {
+    width: 30%;
+  }
+
+  .twitter-card .info-text {
+    padding-left: 1rem;
+  }
+
+  .info-text > p {
+    font-size: 0.7rem;
+  }
+
+  .info-text > h3 {
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .student-card img {
+    top: -1rem;
+    left: -1.5rem;
+  }
+  .rows {
+    width: 88%;
+  }
+  .rows a {
+    display: none;
+  }
+  .griditem1 {
+    width: 50%;
+  }
+  .griditem1q {
+    width: 25%;
+  }
+  #ecx1,
+  #ecx5,
+  #ecx6 {
+    display: block;
+  }
+  .carousel-wrapper {
+    width: 80vw;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: flex;
+  }
+}
