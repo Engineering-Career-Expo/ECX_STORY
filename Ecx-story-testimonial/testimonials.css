@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+:root {
+  --blue: #008cd6;
+  --overlay: rgba(0, 14, 45, 0.63);
+  --black: #000000;
+  --font: #808080;
+  --bg: #ffffff;
+  --twitter-shadow: 1px 1px 3px #00a6ff5d;
+  --student-shadow: -1px 1px 3px #fe413b5b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg);
+}
+
+h1,
+h2 {
+  padding: 1rem 0;
+}
+
+.grey {
+  color: var(--font);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+/* header section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+header,
+main {
+  text-align: center;
+  margin: 1rem auto;
+  width: 95vw;
+}
+
+header * {
+  padding: 0.8rem 0;
+}
+
+header h2 {
+  /* font-weight: 600; */
+  font-size: 1.05rem;
+}
+.carousel-wrapper {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  width: 10%;
+  height: 70%;
+  z-index: 20;
+  opacity: 1;
+}
+.carousel-control-prev {
+  left: -5rem;
+}
+.carousel-control-next {
+  right: -5rem;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../images/arrow-right.svg);
+}
+.carousel-control-prev-icon {
+  background-image: url(../images/arrow-left.svg);
+}
+.carousel-item,
+video {
+  width: 100%;
+  transition: 1s ease;
+}
+.carousel-indicators li {
+  position: relative;
+  background-color: rgb(27, 27, 27);
+  border-radius: 100%;
+  height: 5px;
+  width: 20px;
+  z-index: 20;
+  bottom: -2rem;
+}
+
+/* card container */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.twitter-card,
+.student-card {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin: 2rem auto;
+  border-radius: 15px;
+}
+
+.student-card {
+  padding: 0.4rem 0.8rem 1rem 0.8rem;
+  box-shadow: var(--student-shadow);
+}
+
+.twitter-card {
+  box-shadow: var(--twitter-shadow);
+  padding: 0.8rem;
+}
+.card-text {
+  font-size: 0.5rem;
+  line-height: 1.5;
+}
+
+.card-container img {
+  border-radius: 50%;
+}
+
+.avatar-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.info-text {
+  padding-left: 0.3rem;
+}
+
+.info-text p {
+  font-size: 0.5rem;
+}
+
+.info-text > h3 {
+  font-size: 0.6rem;
+}
+
+.student-card img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -1.2rem;
+  left: 0;
+}
+.twitter-card img {
+  width: 40px;
+  height: 40px;
+}
+
+/* tablet sized media queries */
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: 17px;
+  }
+  .carousel-wrapper {
+    width: 85%;
+    height: auto;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: flex;
+  }
+  .student-card img {
+    width: 105px;
+    height: 105px;
+    position: relative;
+    left: -1.5rem;
+  }
+  .twitter-card img {
+    width: 70px;
+    height: 70px;
+  }
+  .twitter-card,
+  .student-card {
+    width: 30%;
+  }
+
+  .twitter-card .info-text {
+    padding-left: 1rem;
+  }
+
+  .info-text > p {
+    font-size: 0.7rem;
+  }
+
+  .info-text > h3 {
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .student-card img {
+    top: -1rem;
+    left: -1.5rem;
+  }
+}
+
+/* desktop sized media query */
+@media only screen and (min-width: 1050px) {
+  .student-card img {
+    top: -0.5rem;
+    left: -3rem;
+  }
+  .info-text > p {
+    font-size: 0.9rem;
+  }
+
+  .info-text > h3 {
+    font-size: 1.1rem;
+    padding: 0.4rem 0;
+  }
+}
