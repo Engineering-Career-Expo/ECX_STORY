@@ -65,7 +65,10 @@ body {
 /* images section */
 .wrapper {
   width: 90vw;
-  margin: auto;
+  margin: 0 auto 4rem auto;
+  position: relative;
+  z-index: 10;
+  height: auto;
 }
 .about-section {
   font-size: 1.2rem;
@@ -81,7 +84,7 @@ body {
   flex-wrap: wrap;
   max-width: 100%;
   margin: 1rem auto;
-  height: 30vh;
+  height: 35%;
 }
 .grid-qt img,
 .grid-half img {
@@ -99,7 +102,7 @@ body {
 .grid-half {
   width: 98%;
   height: 100%;
-  margin: 0.7rem auto;
+  margin: 0.5rem auto;
 }
 
 .grid-qt {
