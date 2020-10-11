@@ -14,6 +14,7 @@ body {
   padding: 20px 0px 20px 30px;
   background-color: #fff;
   z-index: 10;
+  position: relative;
 }
 .navbarlist1 {
   z-index: 10;
@@ -86,6 +87,7 @@ body {
   display: block;
 }
 #footer {
+  position: relative;
   font-family: sans-serif;
   padding: 30px;
   background-color: #fff;
@@ -171,8 +173,8 @@ body {
     display: block;
     color: #222221;
     text-align: end;
-    width: 25px;
-    height: 4px;
+    width: 30px;
+    height: 6px;
     margin-bottom: 20px;
     border-radius: 2px;
   }
@@ -188,11 +190,11 @@ body {
     color: #000;
   }
   .navbar {
-    padding: 20px;
+    padding: 25px;
   }
   .navbarimg img {
-    width: 50.17px;
-    height: 18px;
+    width: 80px;
+    height: 25px;
   }
 
   .navbarlist1 hr {
