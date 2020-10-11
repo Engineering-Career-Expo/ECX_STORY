@@ -1,0 +1,124 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat";
+}
+.header{
+    background-image:url(images/Welcome\ Image\ 1.svg);
+    background-size: cover;
+    width: 100%;   
+    height: 700px; 
+    padding: 50px;
+    background-color: #FFAE2E;
+    mix-blend-mode: multiply;
+}
+.nav1 i{
+    padding: 5px;
+    color:#000;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.navclass{
+      display: flex;
+    justify-content: space-between;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    margin: 200px;
+}
+.content1 h2{
+    color:#fff;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42.67px;
+    width:298px;
+    text-align: center;
+
+}
+.content1{
+    margin-right: 150px;
+
+}
+.content1 p{
+    width:272px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16.8px;
+    color:#fff;
+}
+.formlist input,.formlist button{
+    display: block;
+     width: 100%;
+    border: 1px solid #FFAE2E;
+    border-radius: 5px;
+    padding:10px;
+    margin: 15px 20px;
+    width:301px;
+}
+.formlist ::placeholder{
+    text-align: center;
+}
+.formlist button{
+   background-color: #FFAE2E;
+   color:#fff;
+   font-weight:700;
+}
+.icons{
+    color:#fff;
+    text-align: center;
+}
+#twi{
+    margin-right: 15px;
+}
+@media (max-width: 640px) {
+.header{
+     padding: 20px;
+
+}
+.content1 h2{
+    text-align: left;
+    margin-top: 100px;
+}
+.content1 p{
+     margin-top: 20px;
+    text-align: left;
+}
+.content{
+    margin:0px;
+    flex-direction: column;
+    align-items: center;
+}
+.content1{
+    margin-right: 0px;
+}
+.content1 h2{
+    width:247px;
+}
+.formlist input,.formlist button{
+    margin:20px 0px;
+}
+.icons{
+    text-align:left;
+    margin-top: 200px;
+}
+}
+@media (max-width: 1024px) {
+    .header{
+        padding: 20px;
+    }
+
+}
+@media (max-width: 768px) {
+    .content1{
+        margin-right: 0px;
+        align-items: center;
+    }
+
+}
+
