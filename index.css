@@ -8,14 +8,19 @@ body {
   background-color: white;
 }
 
+a:not(.see-more) {
+  text-decoration: none;
+  color: white;
+}
 .header {
-  background: url(../images/Rectangle\ 93.png);
+  background: url(images/Rectangle\ 93.png);
   height: 65vh;
   max-height: 500px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
+  margin-top: 1rem;
 }
 
 .header::before,
@@ -115,10 +120,11 @@ body {
   width: 40vw;
   font-size: 1rem;
   margin: 1rem;
-  padding: 0 0.6rem;
+  padding: 0.8rem;
   height: 60px;
-  border-radius: 15px;
+  text-align: center;
   border: none;
+  border-radius: 10px;
   background: #38affe;
   font-weight: bold;
   color: white;
@@ -155,23 +161,23 @@ body {
   width: 42%;
 }
 #ecx1 {
-  background-image: url(../images/Rectangle\ 17.png);
+  background-image: url(images/Rectangle\ 17.png);
 }
 
 #ecx2 {
-  background-image: url(../images/Rectangle\ 6.png);
+  background-image: url(images/Rectangle\ 6.png);
 }
 #ecx3 {
-  background-image: url(../images/Rectangle\ 26.png);
+  background-image: url(images/Rectangle\ 26.png);
 }
 #ecx4 {
-  background-image: url(../images/Rectangle\ 23.png);
+  background-image: url(images/Rectangle\ 23.png);
 }
 #ecx5 {
-  background-image: url(../images/Rectangle\ 20.png);
+  background-image: url(images/Rectangle\ 20.png);
 }
 #ecx6 {
-  background-image: url(../images/Welcome\ Image\ 2.png);
+  background-image: url(images/Welcome\ Image\ 2.png);
 }
 
 .griditems {
@@ -214,10 +220,10 @@ body {
 }
 
 .carousel-control-next-icon {
-  background-image: url(../images/arrow-right.svg);
+  background-image: url(images/arrow-right.svg);
 }
 .carousel-control-prev-icon {
-  background-image: url(../images/arrow-left.svg);
+  background-image: url(images/arrow-left.svg);
 }
 .carousel-item,
 video {
@@ -330,7 +336,7 @@ video {
   height: 50vh;
   width: 90%;
   margin: auto;
-  background-image: url(../images/Rectangle\ 17.png);
+  background-image: url(images/Rectangle\ 17.png);
   position: relative;
 }
 .team-img::before {
@@ -338,13 +344,13 @@ video {
   border-radius: 10px;
 }
 .btncont {
-  justify-content: space-evenly;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: auto;
-  margin: 0 auto;
 }
-
+.btncont * {
+  margin: 1rem auto;
+}
 @media only screen and (min-width: 800px) {
   .header-text h1 {
     font-size: 3.2rem;
@@ -417,5 +423,9 @@ video {
   .carousel-control-prev,
   .carousel-control-next {
     display: flex;
+  }
+  .btncont {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }

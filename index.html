@@ -20,13 +20,13 @@
 
   <body>
     <!-- navbar -->
-    <div class="navbar">
+    <nav class="nav">
       <div class="navbarimg">
-        <img src="../../images/ECX-Logo-01_no_background 2.svg" alt="logo" />
+        <img src="../images/ECX-Logo-01_no_background 2.png" alt="logo" />
       </div>
       <div class="navbarlist">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
+        <ul class="main-list">
+          <li><a href="#">Home</a></li>
           <li><a href="../ECX-timelinepage/timeline.html">Timelines</a></li>
           <li><a href="../Gallery/gallery.html">Gallery</a></li>
           <li>
@@ -34,52 +34,27 @@
               >Testimonials</a
             >
           </li>
-          <div class="dropdown">
-            <li>
-              <a href="../our-teams/executives.html">Our team</a
-              ><img src="../../images/Vector.svg" alt="arrow" />
-            </li>
+          <li class="dropdown">
+            Our team &nbsp;
+            <img src="images/Vector.svg" alt="arrow" />
             <div class="drop13">
               <ul>
-                <li><a href="../our-teams/executives.html">ECX Team</a></li>
+                <hr />
+                <li>
+                  <a href="../our-teams/executives.html">ECX Team</a>
+                </li>
+                <hr />
                 <li>
                   <a href="../our-teams/storycontributors.html">Story Team</a>
                 </li>
               </ul>
             </div>
-          </div>
+          </li>
         </ul>
       </div>
       <i id="burger" class="fas fa-bars"></i>
       <i id="cancel" class="fas fa-times"></i>
-    </div>
-    <div class="navbarlist1">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <hr />
-        <li><a href="../ECX-timelinepage/timeline.html">Timelines</a></li>
-        <hr />
-        <li><a href="../Gallery/gallery.html">Gallery</a></li>
-        <hr />
-        <li>
-          <a href="../Ecx-story-testimonial/testimonials.html">Testimonials</a>
-        </li>
-        <hr />
-        <li class="arrow2">
-          <a href="../our-teams/executives.html">Our team</a
-          ><img class="arrowup" src="../../images/Vector1.svg" alt="arrow" />
-        </li>
-        <hr />
-        <li class="arrowdwn">
-          <a href="../our-teams/executives.html">ECX Team</a>
-        </li>
-        <hr />
-        <li class="arrowdwn">
-          <a href="../our-teams/storycontributors.html">Story Team</a>
-        </li>
-        <hr />
-      </ul>
-    </div>
+    </nav>
 
     <!-- Header -->
     <div class="header">
@@ -111,7 +86,7 @@
       <!-- Timeline -->
       <div class="cardcontainer">
         <div class="cards">
-          <img src="../images/Rectangle 24.png" class="cards-img" alt="..." />
+          <img src="images/Rectangle 24.png" class="cards-img" alt="..." />
           <div class="cards-info">
             <h5 class="cardTitle">ECX 30 DAYS OF CODE</h5>
             <p class="cardP">
@@ -121,15 +96,13 @@
               incidunt magni, suscipit vero reprehenderit fugiat?
             </p>
             <br />
-            <button type="button" class="btn btn-dark">Read</button>
+            <a href="ECX-timelinepage/timeline.html" class="btn btn-dark"
+              >Read</a
+            >
           </div>
         </div>
         <div class="cards">
-          <img
-            src="../images/Rectangle 24 (1).png"
-            class="cards-img"
-            alt="..."
-          />
+          <img src="images/Rectangle 24 (1).png" class="cards-img" alt="..." />
           <div class="cards-info">
             <h5 class="cardTitle">ECX 30 DAYS OF CODE</h5>
             <p class="cardP">
@@ -139,15 +112,13 @@
               incidunt magni, suscipit vero reprehenderit fugiat?
             </p>
             <br />
-            <button type="button" class="btn btn-dark">Read</button>
+            <a href="ECX-timelinepage/timeline.html" class="btn btn-dark"
+              >Read</a
+            >
           </div>
         </div>
         <div class="cards">
-          <img
-            src="../images/Rectangle 24 (2).png"
-            class="cards-img"
-            alt="..."
-          />
+          <img src="images/Rectangle 24 (2).png" class="cards-img" alt="..." />
           <div class="cards-info">
             <h5 class="cardTitle">ECX 30 DAYS OF CODE</h5>
             <p class="cardP">
@@ -157,13 +128,15 @@
               incidunt magni, suscipit vero reprehenderit fugiat?
             </p>
             <br />
-            <button type="button" class="btn btn-dark">Read</button>
+            <a href="ECX-timelinepage/timeline.html" class="btn btn-dark"
+              >Read</a
+            >
           </div>
         </div>
       </div>
-      <button type="button" class="cardbtn">
-        Meet the Team &nbsp; <i class="fa fa-chevron-right"></i>
-      </button>
+      <a href="our-teams/executives.html" target="_blank" class="cardbtn">
+        View Timeline &nbsp; <i class="fa fa-chevron-right"></i>
+      </a>
     </div>
 
     <div class="gallerycontainer">
@@ -176,16 +149,18 @@
           <div class="griditems griditem1q m2" id="ecx3"></div>
         </div>
         <div class="rows">
-          <a href="#">See more <i class="fa fa-chevron-right"></i></a>
+          <a href="Gallery/gallery.html" class="see-more"
+            >See more <i class="fa fa-chevron-right"></i
+          ></a>
           <div class="griditems griditem1q m1" id="ecx4"></div>
           <div class="griditems griditem1q" id="ecx5"></div>
           <div class="griditems griditem1" id="ecx6"></div>
         </div>
       </div>
       <br /><br /><br /><br />
-      <button type="button" class="cardbtn">
+      <a href="Gallery/gallery.html" target="_blank" class="cardbtn">
         View Gallery &nbsp; <i class="fa fa-chevron-right"></i>
-      </button>
+      </a>
     </div>
 
     <br /><br /><br /><br />
@@ -214,7 +189,7 @@
             <div class="carousel-item active" role="listbox">
               <div class="view">
                 <video
-                  src="../images/testimonials.mp4"
+                  src="images/testimonials.mp4"
                   class="video-fluid w-100"
                   autoplay
                   controls
@@ -225,7 +200,7 @@
             <div class="carousel-item">
               <div class="view">
                 <video
-                  src="../images/testimonials.mp4"
+                  src="images/testimonials.mp4"
                   class="video-fluid w-100"
                   autoplay
                   controls
@@ -236,7 +211,7 @@
             <div class="carousel-item">
               <div class="view">
                 <video
-                  src="../images/testimonials.mp4"
+                  src="images/testimonials.mp4"
                   class="video-fluid w-100"
                   autoplay
                   controls
@@ -247,7 +222,7 @@
             <div class="carousel-item">
               <div class="view">
                 <video
-                  src="../images/testimonials.mp4"
+                  src="images/testimonials.mp4"
                   class="video-fluid w-100"
                   autoplay
                   controls
@@ -258,7 +233,7 @@
             <div class="carousel-item">
               <div class="view">
                 <video
-                  src="../images/testimonials.mp4"
+                  src="images/testimonials.mp4"
                   class="video-fluid w-100"
                   autoplay
                   controls
@@ -269,7 +244,7 @@
             <div class="carousel-item">
               <div class="view">
                 <video
-                  src="../images/testimonials.mp4"
+                  src="images/testimonials.mp4"
                   class="video-fluid w-100"
                   autoplay
                   controls
@@ -280,7 +255,7 @@
             <div class="carousel-item">
               <div class="view">
                 <video
-                  src="../images/testimonials.mp4"
+                  src="images/testimonials.mp4"
                   class="video-fluid w-100"
                   autoplay
                   controls
@@ -291,7 +266,7 @@
             <div class="carousel-item">
               <div class="view">
                 <video
-                  src="../images/testimonials.mp4"
+                  src="images/testimonials.mp4"
                   class="video-fluid w-100"
                   autoplay
                   controls
@@ -302,7 +277,7 @@
             <div class="carousel-item">
               <div class="view">
                 <video
-                  src="../images/testimonials.mp4"
+                  src="images/testimonials.mp4"
                   class="video-fluid w-100"
                   autoplay
                   controls
@@ -362,7 +337,7 @@
       <div class="testimonial-container">
         <div class="student-card">
           <div class="avatar-info">
-            <img src="../images/avatar1.png" alt="" />
+            <img src="images/avatar1.png" alt="" />
             <div class="info-text">
               <h3>Daniel Ejianibu</h3>
               <p>Head of Content and Publicity</p>
@@ -377,7 +352,7 @@
         </div>
         <div class="student-card">
           <div class="avatar-info">
-            <img src="../images/avatar2.png" alt="" />
+            <img src="images/avatar2.png" alt="" />
             <div class="info-text">
               <h3>Daniel Ejianibu</h3>
               <p>Head of Content and Publicity</p>
@@ -392,7 +367,7 @@
         </div>
         <div class="student-card">
           <div class="avatar-info">
-            <img src="../images/avatar3.png" alt="" />
+            <img src="images/avatar3.png" alt="" />
             <div class="info-text">
               <h3>Daniel Ejianibu</h3>
               <p>Head of Content and Publicity</p>
@@ -421,7 +396,7 @@
       <div class="testimonial-container">
         <div class="twitter-card">
           <div class="avatar-info">
-            <img src="../images/avatar1.png" alt="" />
+            <img src="images/avatar1.png" alt="" />
             <div class="info-text">
               <h3>Daniel Ejianibu</h3>
               <p>Head of Content and Publicity</p>
@@ -437,7 +412,7 @@
 
         <div class="twitter-card">
           <div class="avatar-info">
-            <img src="../images/avatar2.png" alt="" />
+            <img src="images/avatar2.png" alt="" />
             <div class="info-text">
               <h3>Daniel Ejianibu</h3>
               <p>Head of Content and Publicity</p>
@@ -451,9 +426,13 @@
           </p>
         </div>
       </div>
-      <button type="button" class="cardbtn">
+      <a
+        href="ECX-story-testimonial/testimonials.html"
+        target="_blank"
+        class="cardbtn"
+      >
         View Testimonials &nbsp; <i class="fa fa-chevron-right"></i>
-      </button>
+      </a>
     </div>
 
     <br /><br /><br /><br />
@@ -479,14 +458,18 @@
       <br /><br /><br />
       <div class="btncont">
         <div class="btn11">
-          <button type="button" class="cardbtn">
+          <a href="our-teams/executives.html" target="_blank" class="cardbtn">
             Meet the Team &nbsp;<i class="fa fa-chevron-right"></i>
-          </button>
+          </a>
         </div>
         <div class="btn22">
-          <button type="button" class="cardbtn">
+          <a
+            href="our-teams/storycontributors.html"
+            target="_blank"
+            class="cardbtn"
+          >
             Meet the Contributors &nbsp;<i class="fa fa-chevron-right"></i>
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -505,7 +488,7 @@
         </h4>
       </div>
       <br /><br />
-      <button type="button" class="cardbtn">
+      <button type="button" target="_blank" class="cardbtn">
         Read More &nbsp; <i class="fa fa-chevron-right"></i>
       </button>
     </div>
@@ -514,7 +497,7 @@
     <div id="footer">
       <div class="footer0">
         <div class="footer1">
-          <img src="../../images/ECX-Logo-01_no_background 2.svg" alt="logo1" />
+          <img src="images/ECX-Logo-01_no_background 2.png" alt="logo1" />
           <p>
             Lorem ipsum door sit amet consectetur adipisicing elit. Ipsa nisi
             dicta excepturi aspernatur non incidunt esse quod
@@ -529,14 +512,14 @@
           <div class="footer2">
             <p>QUICK LINKS</p>
             <ul>
-              <li><a href="../ECX-timelinepage/timeline.html">Timelines</a></li>
-              <li><a href="../Gallery/gallery.html">Gallery</a></li>
+              <li><a href="ECX-timelinepage/timeline.html">Timelines</a></li>
+              <li><a href="Gallery/gallery.html">Gallery</a></li>
               <li>
-                <a href="../Ecx-story-testimonial/testimonials.html"
+                <a href="ECX-story-testimonials/testimonials.html"
                   >Testimonials</a
                 >
               </li>
-              <li><a href="../our-teams/executives.html">Our teams</a></li>
+              <li><a href="our-teams/executives.html">Our teams</a></li>
             </ul>
           </div>
           <div class="footer3">

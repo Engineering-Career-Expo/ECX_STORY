@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -76,12 +72,12 @@ div.scrollmenu {
   overflow: auto;
   white-space: nowrap;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .tag {
     margin-top: -3%;
   }
   .plac {
-    margin-top: 10%;
+    margin: 10% auto;
   }
   .box {
     padding-left: 20px;
