@@ -1,3 +1,6 @@
-# ECX-Landingpage
+# ECX STORY Website
 
-https://tun-dev.github.io/ECX-Landingpage/.
+## Share Your Story!
+
+[Click me](https://ecx-story.netlify.app/) to see how ECX has
+positively affected lives of students
