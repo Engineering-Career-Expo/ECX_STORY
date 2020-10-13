@@ -6,6 +6,7 @@
 body {
   font-family: sans-serif;
   background-color: white;
+  overflow-x: hidden;
 }
 
 a:not(.see-more) {
@@ -13,14 +14,13 @@ a:not(.see-more) {
   color: white;
 }
 .header {
-  background: url(images/Rectangle\ 93.png);
+  background: url(../images/Rectangle\ 93.png);
   height: 65vh;
   max-height: 500px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
-  margin-top: 1rem;
 }
 
 .header::before,
@@ -161,28 +161,28 @@ a:not(.see-more) {
   width: 42%;
 }
 #ecx1 {
-  background-image: url(images/Rectangle\ 17.png);
+  background-image: url(../images/Rectangle\ 17.png);
 }
 
 #ecx2 {
-  background-image: url(images/Rectangle\ 6.png);
+  background-image: url(../images/Rectangle\ 6.png);
 }
 #ecx3 {
-  background-image: url(images/Rectangle\ 26.png);
+  background-image: url(../images/Rectangle\ 26.png);
 }
 #ecx4 {
-  background-image: url(images/Rectangle\ 23.png);
+  background-image: url(../images/Rectangle\ 23.png);
 }
 #ecx5 {
-  background-image: url(images/Rectangle\ 20.png);
+  background-image: url(../images/Rectangle\ 20.png);
 }
 #ecx6 {
-  background-image: url(images/Welcome\ Image\ 2.png);
+  background-image: url(../images/Welcome\ Image\ 2.png);
 }
 
 .griditems {
-  height: 40vh;
-  min-height: 350px;
+  max-height: 40vh;
+  min-height: 300px;
   border-radius: 10px;
   margin: 15px;
   transition: 1s;
@@ -220,10 +220,10 @@ a:not(.see-more) {
 }
 
 .carousel-control-next-icon {
-  background-image: url(images/arrow-right.svg);
+  background-image: url(../images/arrow-right.svg);
 }
 .carousel-control-prev-icon {
-  background-image: url(images/arrow-left.svg);
+  background-image: url(../images/arrow-left.svg);
 }
 .carousel-item,
 video {
@@ -336,7 +336,7 @@ video {
   height: 50vh;
   width: 90%;
   margin: auto;
-  background-image: url(images/Rectangle\ 17.png);
+  background-image: url(../images/Rectangle\ 17.png);
   position: relative;
 }
 .team-img::before {

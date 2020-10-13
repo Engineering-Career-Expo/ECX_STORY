@@ -17,3 +17,4 @@ drop1.addEventListener("click", function () {
   drop1.style.display = "none";
   drop.style.transform = "translateY(-100vh)"
 });
+
