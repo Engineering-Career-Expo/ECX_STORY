@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat";
+  overflow-x: hidden;
+}
+.header {
+  background-image: url(images/Welcome\ Image\ 1.svg);
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  /* background-color: #ffae2e;
+  mix-blend-mode: multiply; */
+}
+.nav1 i {
+  padding: 5px;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.navclass {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px;
+}
+.nav img {
+  width: 30%;
+  height: 40px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  width: 90vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.content1 h1 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.content1 p {
+  line-height: 1.5;
+  color: #fff;
+  font-size: 12px;
+}
+form,
+.content1 {
+  width: 40%;
+  margin: 0 1rem;
+}
+.formlist {
+  justify-self: center;
+  align-self: center;
+}
+.formlist input,
+.formlist button {
+  display: block;
+  width: 100%;
+  border: 1px solid #ffae2e;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px 20px;
+  width: 301px;
+}
+.formlist ::placeholder {
+  text-align: center;
+}
+.formlist button {
+  background-color: #ffae2e;
+  color: #fff;
+  font-weight: 700;
+}
+.icons {
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 2rem;
+  left: 0;
+  width: 100%;
+}
+form button {
+  cursor: pointer;
+}
+.icons * {
+  cursor: pointer;
+  margin-right: 15px;
+  transition: 0.6s;
+}
+form button:hover {
+  background-color: #ffba4a;
+}
+.icons *:hover {
+  color: #ffae2e;
+  transform: scale(1.1);
+}
+@media (max-width: 760px) {
+  .content1,
+  form {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .content1 h2 {
+    margin-bottom: 1rem;
+  }
+}

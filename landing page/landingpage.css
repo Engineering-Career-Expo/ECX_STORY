@@ -6,8 +6,13 @@
 body {
   font-family: sans-serif;
   background-color: white;
+  overflow-x: hidden;
 }
 
+a:not(.see-more) {
+  text-decoration: none;
+  color: white;
+}
 .header {
   background: url(../images/Rectangle\ 93.png);
   height: 65vh;
@@ -115,10 +120,11 @@ body {
   width: 40vw;
   font-size: 1rem;
   margin: 1rem;
-  padding: 0 0.6rem;
+  padding: 0.8rem;
   height: 60px;
-  border-radius: 15px;
+  text-align: center;
   border: none;
+  border-radius: 10px;
   background: #38affe;
   font-weight: bold;
   color: white;
@@ -175,8 +181,8 @@ body {
 }
 
 .griditems {
-  height: 40vh;
-  min-height: 350px;
+  max-height: 40vh;
+  min-height: 300px;
   border-radius: 10px;
   margin: 15px;
   transition: 1s;
@@ -338,13 +344,13 @@ video {
   border-radius: 10px;
 }
 .btncont {
-  justify-content: space-evenly;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: auto;
-  margin: 0 auto;
 }
-
+.btncont * {
+  margin: 1rem auto;
+}
 @media only screen and (min-width: 800px) {
   .header-text h1 {
     font-size: 3.2rem;
@@ -417,5 +423,9 @@ video {
   .carousel-control-prev,
   .carousel-control-next {
     display: flex;
+  }
+  .btncont {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
