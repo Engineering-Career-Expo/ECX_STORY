@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="landingpage.css" />
+    <link rel="stylesheet" href="../navbar and footer/navbar.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="landingpage.css" />
-    <link rel="stylesheet" href="../navbar and footer/navbar.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -26,7 +26,7 @@
       </div>
       <div class="navbarlist">
         <ul class="main-list">
-          <li><a href="#">Home</a></li>
+          <li><a class="activeNav" href="#">Home</a></li>
           <li><a href="../ECX-timelinepage/timeline.html">Timelines</a></li>
           <li><a href="../Gallery/gallery.html">Gallery</a></li>
           <li>
@@ -59,7 +59,7 @@
     <!-- Header -->
     <div class="header">
       <div class="header-text">
-        <h1 id="hiName">WELCOME TO ECX STORY</h1>
+        <h1 id="hiName"></h1>
         <p>
           The Engineering Career Expo second edition (ECX 2.0) has journeyed the
           past one year actively in the course of imparting soft and technical
@@ -88,17 +88,15 @@
         <div class="cards">
           <img src="../images/Rectangle 24.png" class="cards-img" alt="..." />
           <div class="cards-info">
-            <h5 class="cardTitle">ECX 30 DAYS OF CODE</h5>
+            <h5 class="cardTitle">JANUARY-ABOUT ECX</h5>
             <p class="cardP">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              debitis eveniet magnam provident quisquam minima nulla ad
-              molestiae itaque amet, repudiandae veritatis, modi excepturi
-              incidunt magni, suscipit vero reprehenderit fugiat?
+              We started the peculiar year 2020 with the ECX info session to
+              create awareness to the students especially the freshers about
+              ECX, what we do, our core values, mission and how to join the
+              community.
             </p>
             <br />
-            <a href="ECX-timelinepage/timeline.html" class="btn btn-dark"
-              >Read</a
-            >
+            <a href="../ECX-timelinepage/timeline.html" class="button">Read</a>
           </div>
         </div>
         <div class="cards">
@@ -108,17 +106,14 @@
             alt="..."
           />
           <div class="cards-info">
-            <h5 class="cardTitle">ECX 30 DAYS OF CODE</h5>
+            <h5 class="cardTitle">FEBRUARY-CALL TO REGISTER</h5>
             <p class="cardP">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              debitis eveniet magnam provident quisquam minima nulla ad
-              molestiae itaque amet, repudiandae veritatis, modi excepturi
-              incidunt magni, suscipit vero reprehenderit fugiat?
+              The ECX application form was officially opened for interested
+              students to register for our weekly classes and get to be members
+              of our community.
             </p>
             <br />
-            <a href="ECX-timelinepage/timeline.html" class="btn btn-dark"
-              >Read</a
-            >
+            <a href="../ECX-timelinepage/timeline.html" class="button">Read</a>
           </div>
         </div>
         <div class="cards">
@@ -128,21 +123,19 @@
             alt="..."
           />
           <div class="cards-info">
-            <h5 class="cardTitle">ECX 30 DAYS OF CODE</h5>
+            <h5 class="cardTitle">MARCH-CLASSES BEGIN!</h5>
             <p class="cardP">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              debitis eveniet magnam provident quisquam minima nulla ad
-              molestiae itaque amet, repudiandae veritatis, modi excepturi
-              incidunt magni, suscipit vero reprehenderit fugiat?
+              In this month we introduced and began weekly classes, held on
+              Wednesdays and Fridays for students in the following tracks:
+              Android Design, Back End Development, Engineering Design, Front
+              End Development, Python and UI/UX Design.
             </p>
             <br />
-            <a href="ECX-timelinepage/timeline.html" class="btn btn-dark"
-              >Read</a
-            >
+            <a href="../ECX-timelinepage/timeline.html" class="button">Read</a>
           </div>
         </div>
       </div>
-      <a href="our-teams/executives.html" target="_blank" class="cardbtn">
+      <a href="../our-teams/executives.html" target="_blank" class="cardbtn">
         View Timeline &nbsp; <i class="fa fa-chevron-right"></i>
       </a>
     </div>
@@ -157,7 +150,7 @@
           <div class="griditems griditem1q m2" id="ecx3"></div>
         </div>
         <div class="rows">
-          <a href="Gallery/gallery.html" class="see-more"
+          <a href="../Gallery/gallery.html" class="see-more"
             >See more <i class="fa fa-chevron-right"></i
           ></a>
           <div class="griditems griditem1q m1" id="ecx4"></div>
@@ -166,7 +159,7 @@
         </div>
       </div>
       <br /><br /><br /><br />
-      <a href="Gallery/gallery.html" target="_blank" class="cardbtn">
+      <a href="../Gallery/gallery.html" target="_blank" class="cardbtn">
         View Gallery &nbsp; <i class="fa fa-chevron-right"></i>
       </a>
     </div>
@@ -334,7 +327,7 @@
       <h1>From Students</h1>
       <br />
       <div class="word">
-        <h6>Here are testimonies from students of UNILAG.</h6>
+        <h4>Here are testimonies from students of UNILAG.</h4>
       </div>
       <br /><br /><br />
 
@@ -394,7 +387,7 @@
       <h1>From Twitter</h1>
       <br />
       <div class="word">
-        <h6>Here are stories from twitter.</h6>
+        <h4>Here are stories from twitter.</h4>
       </div>
       <br /><br /><br />
       <div class="testimonial-container">
@@ -462,13 +455,17 @@
       <br /><br /><br />
       <div class="btncont">
         <div class="btn11">
-          <a href="our-teams/executives.html" target="_blank" class="cardbtn">
+          <a
+            href="../our-teams/executives.html"
+            target="_blank"
+            class="cardbtn"
+          >
             Meet the Team &nbsp;<i class="fa fa-chevron-right"></i>
           </a>
         </div>
         <div class="btn22">
           <a
-            href="our-teams/storycontributors.html"
+            href="../our-teams/storycontributors.html"
             target="_blank"
             class="cardbtn"
           >
@@ -512,8 +509,16 @@
           <a class="link" href="https://instagram.com/ecxunilag"
             ><i class="fab fa-instagram"></i
           ></a>
-          <a class="link" href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a class="link" href="#"><i class="fab fa-youtube"></i></a>
+          <a
+            class="link"
+            href="https://www.linkedin.com/company/engineering-career-expo?trk=similar-pages_result-card_full-click"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="link"
+            href="https://www.youtube.com/channel/UCfNQxfT2ZVHOwgVVJcA6q8w"
+            ><i class="fab fa-youtube"></i
+          ></a>
         </div>
 
         <div class="footer22">
@@ -546,7 +551,6 @@
         ></a>
       </div>
     </div>
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

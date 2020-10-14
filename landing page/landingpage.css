@@ -6,13 +6,15 @@
 body {
   font-family: sans-serif;
   background-color: white;
-  overflow-x: hidden;
+  width: 100vw;
+  overflow-x: hidden !important;
 }
 
 a:not(.see-more) {
   text-decoration: none;
   color: white;
 }
+
 .header {
   background: url(../images/Rectangle\ 93.png);
   height: 65vh;
@@ -53,57 +55,63 @@ a:not(.see-more) {
   font-size: 0.75rem;
 }
 
-.word {
+.word h4 {
+  font-size: 1.2rem;
   color: #6f6f6f;
 }
 
-.word1 {
-  color: white;
-  font-size: 23px;
-}
 .upto {
   text-align: center;
   width: 85vw;
   margin: 1.5rem auto;
+  height: auto;
 }
 
-.btn {
+.button {
   width: 40%;
-  background-color: rgba(254, 64, 59, 1);
-  float: left;
-  outline: none;
+  background: rgba(254, 64, 59, 1);
   border: none;
+  text-align: center;
   border-radius: 5px;
-  padding: 0.3rem 0;
-  margin-bottom: 1.4rem !important;
+  padding: 0.5rem 0;
+  position: absolute;
+  bottom: 1rem;
 }
 
 .cardcontainer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
   width: 100%;
   margin: 2rem auto;
 }
 .cards {
   border-radius: 15px;
   width: 80%;
+  position: relative;
   max-width: 400px;
   height: auto;
   box-shadow: -1px 1px 3px 1px #5353535b;
-  margin: 1.5rem auto;
   padding-bottom: 0.6rem;
+  margin: 1rem auto;
 }
-.cards h5 {
+.cardTitle {
   font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
 }
 
+.cardP {
+  font-size: 0.9rem !important;
+  line-height: 1.3;
+}
 .cards img {
   height: 40%;
   width: 100%;
   border-radius: 15px 15px 0 0;
 }
-.cards,
 .cards-info {
   display: flex;
   flex-direction: column;
@@ -130,8 +138,10 @@ a:not(.see-more) {
   color: white;
   transition: 0.5s;
 }
-.cardbtn:hover {
+.cardbtn:hover,
+.button:hover {
   background-color: #3a3939;
+  color: white;
 }
 
 .gallerycontainer {
@@ -197,47 +207,47 @@ a:not(.see-more) {
 }
 
 .carousel-wrapper {
-  width: 95vw;
+  max-width: 80vw !important;
   margin: auto;
   height: 100%;
 }
 .carousel-control-prev,
 .carousel-control-next {
-  display: none;
-  position: absolute;
-  top: 40%;
-  transform: translateY(-40%);
-  width: 10%;
-  height: 70%;
-  z-index: 20;
+  display: flex;
+  position: absolute !important;
+  top: 40% !important;
+  transform: translateY(-40%) !important;
+  width: 10% !important;
+  height: 70% !important;
+  z-index: 20 !important;
   opacity: 1;
 }
 .carousel-control-prev {
-  left: -5rem;
+  left: -2rem !important;
 }
 .carousel-control-next {
-  right: -5rem;
+  right: -2rem !important;
 }
 
 .carousel-control-next-icon {
-  background-image: url(../images/arrow-right.svg);
+  background-image: url(../images/arrow-right.svg) !important;
 }
 .carousel-control-prev-icon {
-  background-image: url(../images/arrow-left.svg);
+  background-image: url(../images/arrow-left.svg) !important;
 }
 .carousel-item,
 video {
   width: 100%;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 .carousel-indicators li {
-  position: relative;
-  background-color: rgb(27, 27, 27);
-  border-radius: 100%;
-  height: 20px;
-  width: 20px;
-  z-index: 20;
-  bottom: -4rem;
+  position: relative !important;
+  background-color: rgb(27, 27, 27) !important;
+  border-radius: 50% !important;
+  height: 20px !important;
+  width: 20px !important;
+  z-index: 20 !important;
+  bottom: -4rem !important;
 }
 
 .topstd {
@@ -259,7 +269,7 @@ video {
 
 .twitter-card,
 .student-card {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -270,7 +280,7 @@ video {
 
 .student-card {
   padding: 0.4rem 0.8rem 1rem 0.8rem;
-  box-shadow: -1px 1px 3px #fe413b5b;
+  box-shadow: -1px 1px 3px #ffaf2ecc;
 }
 
 .twitter-card {
@@ -278,7 +288,7 @@ video {
   padding: 0.8rem;
 }
 .card-text {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   line-height: 1.5;
 }
 
@@ -333,7 +343,8 @@ video {
 }
 
 .team-img {
-  height: 50vh;
+  /* height: 50vh; */
+  min-height: 400px;
   width: 90%;
   margin: auto;
   background-image: url(../images/Rectangle\ 17.png);
@@ -360,6 +371,10 @@ video {
   }
   .cards {
     width: 30%;
+    min-width: 280px;
+  }
+  .cardcontainer {
+    flex-direction: row;
   }
   .cardbtn {
     width: 25vw;
@@ -378,6 +393,7 @@ video {
   .twitter-card,
   .student-card {
     width: 30%;
+    min-width: 250px;
   }
 
   .twitter-card .info-text {
@@ -420,9 +436,11 @@ video {
   .carousel-wrapper {
     width: 80vw;
   }
-  .carousel-control-prev,
+  .carousel-control-prev {
+    left: -4rem !important;
+  }
   .carousel-control-next {
-    display: flex;
+    right: -4rem !important;
   }
   .btncont {
     flex-direction: row;

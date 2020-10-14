@@ -5,17 +5,17 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 .header {
-  background-image: url(images/Welcome\ Image\ 1.svg);
+  background-image: url(images/Welcome\ Image\ 1.png);
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
   max-height: 100vh;
-  /* background-color: #ffae2e;
-  mix-blend-mode: multiply; */
+  position: relative;
+  mix-blend-mode: color-burn;
 }
 .nav1 i {
   padding: 5px;
@@ -27,12 +27,15 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   padding: 30px;
+  position: relative;
+  z-index: 100;
 }
 .nav img {
   width: 30%;
   height: 40px;
 }
 .content {
+  z-index: 10;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -45,17 +48,18 @@ body {
 .content1 h1 {
   color: #fff;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 2.5rem;
 }
 .content1 p {
-  line-height: 1.5;
+  line-height: 1.7;
   color: #fff;
   font-size: 12px;
+  font-weight: lighter;
 }
-form,
+.formlist,
 .content1 {
-  width: 40%;
+  width: 45%;
   margin: 0 1rem;
 }
 .formlist {
@@ -65,12 +69,11 @@ form,
 .formlist input,
 .formlist button {
   display: block;
-  width: 100%;
+  width: 80%;
   border: 1px solid #ffae2e;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 15px 20px;
-  width: 301px;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 20px;
 }
 .formlist ::placeholder {
   text-align: center;
@@ -81,18 +84,19 @@ form,
   font-weight: 700;
 }
 .icons {
-  color: #fff;
   text-align: center;
   position: fixed;
   bottom: 2rem;
   left: 0;
   width: 100%;
+  z-index: 10;
+  font-size: 1.2rem;
 }
 form button {
   cursor: pointer;
 }
 .icons * {
-  cursor: pointer;
+  color: #fff;
   margin-right: 15px;
   transition: 0.6s;
 }
@@ -104,14 +108,23 @@ form button:hover {
   transform: scale(1.1);
 }
 @media (max-width: 760px) {
-  .content1,
-  form {
-    width: 100%;
+  .content,
+  .formlist {
+    width: 98vw;
     margin: 1rem auto;
   }
+  .formlist input,
+  .formlist button {
+    width: 90%;
+  }
   .content {
+    text-align: left;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    overflow: hidden;
+  }
+  .content1 {
+    width: 90%;
   }
   .content1 h2 {
     margin-bottom: 1rem;

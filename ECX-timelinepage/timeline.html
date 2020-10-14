@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timeline</title>
-    <link rel="stylesheet" href="timeline.css" />
-    <link rel="stylesheet" href="../navbar and footer/navbar.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="timeline.css" />
+    <link rel="stylesheet" href="../navbar and footer/navbar.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -23,15 +23,18 @@
   </head>
   <body>
     <!-- navbar -->
-    <!-- nav -->
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <div class="navbarimg">
         <img src="../images/ECX-Logo-01_no_background 2.png" alt="logo" />
       </div>
       <div class="navbarlist">
         <ul class="main-list">
           <li><a href="../landing page/landingpage.html">Home</a></li>
-          <li><a href="../ECX-timelinepage/timeline.html">Timelines</a></li>
+          <li>
+            <a class="activeNav" href="../ECX-timelinepage/timeline.html"
+              >Timelines</a
+            >
+          </li>
           <li><a href="../Gallery/gallery.html">Gallery</a></li>
           <li>
             <a href="../Ecx-story-testimonial/testimonials.html"
@@ -67,22 +70,18 @@
       </p>
     </header>
     <section>
-      <div class="mx-auto">
-        <ul class="monthlist container my-5">
-          <div class="scrollmenu">
-            <a href="#january"> January </a>
-            <a href="#february"> February </a>
-            <a href="#march"> March </a>
-            <a href="#april"> April </a>
-            <a href="#may"> May </a>
-            <a href="#july">July </a>
-            <a href="#august"> August </a>
-            <a href="#september"> September </a>
-            <a href="#october"> October </a>
-            <a href="#november"> November </a>
-          </div>
-        </ul>
-      </div>
+      <ul class="monthlist">
+        <a href="#january"> January </a>
+        <a href="#february"> February </a>
+        <a href="#march"> March </a>
+        <a href="#april"> April </a>
+        <a href="#may"> May </a>
+        <a href="#july">July </a>
+        <a href="#august"> August </a>
+        <a href="#september"> September </a>
+        <a href="#october"> October </a>
+        <a href="#november"> November </a>
+      </ul>
 
       <div class="container months">
         <div id="january" class="monthBox">
@@ -964,8 +963,16 @@
           <a class="link" href="https://instagram.com/ecxunilag"
             ><i class="fab fa-instagram"></i
           ></a>
-          <a class="link" href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a class="link" href="#"><i class="fab fa-youtube"></i></a>
+          <a
+            class="link"
+            href="https://www.linkedin.com/company/engineering-career-expo?trk=similar-pages_result-card_full-click"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="link"
+            href="https://www.youtube.com/channel/UCfNQxfT2ZVHOwgVVJcA6q8w"
+            ><i class="fab fa-youtube"></i
+          ></a>
         </div>
 
         <div class="footer22">
@@ -998,7 +1005,6 @@
         ></a>
       </div>
     </div>
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

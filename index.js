@@ -5,14 +5,18 @@ const getId = e => document.getElementById(e);
 // grab elements
 const formBtn = $("form .button");
 let hiName = $("#hiName");
+const email = getId("email");
+const names = getId("name");
+let getName, setName, nameArr, lastName;
 
-//from validity functions
-let formGet = function (e) {
-    const email = getId("email");
-    const names = getId("name");
+
+let formGet = (e) => {
     emailPattern = /\S+@\S+\.\S+/;
-    let n = names.split(' ')[1];
+    nameArr = names.value.split(" ");//split the input name into an array
+    lastName = nameArr[nameArr.length - 1];//extract the last name
+    localStorage.setItem('name', lastName);//store the last inputed name in a local storage
 
+    //custom form validation
     if (emailPattern.test(email.value) && email.value !== "" && !names.value.includes('+')) {
         email.setCustomValidity("");
         names.setCustomValidity('')
@@ -24,27 +28,10 @@ let formGet = function (e) {
     }
 }
 
-// let query = {}
-// dataArr = location.search.substr(1).split('&')[0]//gets the data from the searchbar url
-//     .split('=')
-//     .join(',')
-//     .split('+')
-//     .join(',')
-//     .split(',');//this returns an array of the persons name
-
-// //Return a template name property for the empty query object inputing the last name of the person
-// location.search.substr(1).split('&')
-//     .forEach(item => query[item.split('=')[0]] = dataArr[dataArr.length - 1]);
-// let getName, setName;
-// setName = localStorage.setItem("name", query.name);
-// window.onload = event => {
-//     if (window.location.href.match('/landing%20page/landingpage.html' != null)) {
-//         getName = localStorage.getItem("name");
-//         hiName.textContent = `HI ${getName}!`;
-//     } else if (window.location.href.match('/index.html' != null)) {
-//         localStorage.removeItem("name");
-//         hiName.textContent = `HI There!`;
-//     }
-// }
+window.onload = event => {
+    // get name from local storage and display on home page
+    getName = localStorage.getItem('name');
+    hiName.textContent = `HI ${getName}!`;
+}
 
 formBtn.addEventListener('click', formGet);

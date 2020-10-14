@@ -1,29 +1,39 @@
-
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+#nav {
+  position: relative;
 }
 
 li {
   list-style: none;
 }
-.monthlist{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.monthlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  flex-wrap: wrap;
+  position: sticky !important;
+  top: -1px;
+  z-index: 80;
 }
 
 .monthlist a {
-  color: black;
+  color: #585858;
   text-decoration: none !important;
   padding: 5px;
+  font-size: 1.2rem;
   text-align: center;
- margin:5px;
+  margin: 5px;
 }
 .monthlist a:hover {
   text-decoration: none !important;
   color: white !important;
   background: #ffae2e;
-  box-shadow: 1px 1px 2px gray;
+  box-shadow: 1px 1px 1px grey;
   border-radius: 10px;
 }
 
@@ -38,40 +48,37 @@ header h1 {
 .monthBody h5 {
   font-weight: 600;
 }
-.monthBody{
-  
-}
+
 .monthBody p {
   color: #6f6f6f;
 }
 
-.monthBox{
-  background: #FFFFFF;
-box-shadow: 0px 2px 6.88691px 2px rgba(98, 98, 98, 0.22);
-border-radius: 27.5477px;
+.monthBox {
+  background: #ffffff;
+  box-shadow: 0px 2px 6.88691px 2px rgba(98, 98, 98, 0.22);
+  border-radius: 27px;
+  width: 70vw;
+  margin: 2rem auto !important;
 }
-
+.carousel-item img {
+  border-radius: 20px 20px 0 0;
+}
 .carousel-indicators li {
   position: relative;
   border-radius: 50%;
   height: 10px !important;
   width: 10px !important;
   z-index: 20;
+  background-color: rgba(230, 227, 227, 0.904);
 }
 
-@media screen and (max-width: 800px) {
-  div.scrollmenu {
-    overflow: auto;
-    white-space: nowrap;
-  }
+.carousel-indicators .active {
+  background-color: #2980b9;
 }
 
-@media only screen and (min-width:100px) and (max-width:576px){
-  .monthlist a:hover {
-    text-decoration: none !important;
-    color: white !important;
-    box-shadow: 1px 1px 2px gray;
-    background: #008CD6;
-  border-radius: 10px;
+@media only screen and (max-width: 800px) {
+  .monthBox {
+    width: 80vw;
+    max-width: 650px;
   }
 }
