@@ -6,7 +6,7 @@
   --font: #808080;
   --bg: #ffffff;
   --twitter-shadow: 1px 1px 3px #00a6ff5d;
-  --student-shadow: -1px 1px 3px #fe413b5b;
+  --student-shadow: -1px 1px 3px #ffaf2ecc;
 }
 * {
   margin: 0;
@@ -16,6 +16,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--bg);
+  overflow-x: hidden;
 }
 
 h1,
@@ -36,7 +37,8 @@ header {
   flex-direction: column;
 }
 header,
-main {
+main,
+.carousel-wrapper {
   text-align: center;
   margin: 1rem auto;
   width: 95vw;
@@ -82,13 +84,13 @@ header h2 {
 .carousel-item,
 video {
   width: 100%;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 .carousel-indicators li {
   position: relative;
   background-color: rgb(27, 27, 27);
   border-radius: 100%;
-  height: 5px;
+  height: 2px;
   width: 20px;
   z-index: 20;
   bottom: -2rem;

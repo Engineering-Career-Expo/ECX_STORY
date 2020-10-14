@@ -13,10 +13,9 @@
   padding: 15px 20px;
   background: white;
   z-index: 100;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
-  position: sticky;
   font-size: 17px;
   width: 100vw !important;
 }
@@ -46,8 +45,12 @@
   font-weight: 400;
   font-size: 18px;
 }
+
+.activeNav {
+  border-bottom: 3px solid #008cd6;
+}
 .navbarlist a:hover {
-  color: #28a9fe;
+  color: #008cd6;
 }
 #cancel,
 #burger {
@@ -162,6 +165,12 @@ li hr {
   font-size: 18px;
   line-height: 21.6px;
 }
+.footer1 i:hover,
+.footer2 a:hover,
+.footer3 a:hover {
+  color: #008cd6 !important;
+  border-color: #008cd6;
+}
 .link i {
   border: 1.5px solid #222221;
   border-radius: 50px;
@@ -183,17 +192,11 @@ li hr {
 }
 
 @media (max-width: 800px) {
-  .nav {
-    padding: 10px;
-    height: 45px;
-  }
   #burger,
   #cancel {
     display: block;
     color: #222221;
-    width: 30px;
-    height: 6px;
-    margin-bottom: 20px;
+    font-size: 1.7rem;
   }
   #cancel {
     display: none;
