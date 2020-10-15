@@ -146,7 +146,7 @@ form button:hover {
   }
   .content1 {
     width: 90%;
-    margin: 1rem auto;
+    margin: 1rem auto 1rem 1.2rem;
   }
   .content1 h2 {
     margin-bottom: 1rem;
@@ -155,18 +155,5 @@ form button:hover {
     position: relative;
     margin-top: 2rem;
     height: 8vh;
-  }
-}
-@media (max-width: 360px) {
-  .content,
-  .formlist {
-    margin-left: 0;
-  }
-  .content1 {
-    margin-left: 1.2rem;
-  }
-  .content {
-    height: 70%;
-    position: static;
   }
 }
