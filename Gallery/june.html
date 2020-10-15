@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ECX Engineering Career Expo</title>
-    <link rel="stylesheet" href="navbar.css" />
-    <!-- <link rel="stylesheet" href="../nav and footer/nav.css" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
+    <!--Font Awesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="gallery.css" />
+    <link rel="stylesheet" href="../navbar and footer/navbar.css" />
+    <title>ECX-Gallery</title>
   </head>
+
   <body>
-    <!-- nav -->
-    <nav class="nav">
+    <!-- navbar -->
+    <nav id="nav" class="nav">
       <div class="navbarimg">
         <img src="../images/ECX-Logo-01_no_background 2.png" alt="logo" />
       </div>
@@ -22,7 +28,9 @@
         <ul class="main-list">
           <li><a href="../landing page/landingpage.html">Home</a></li>
           <li><a href="../ECX-timelinepage/timeline.html">Timeline</a></li>
-          <li><a href="../Gallery/gallery.html">Gallery</a></li>
+          <li>
+            <a class="activeNav" href="../Gallery/gallery.html">Gallery</a>
+          </li>
           <li>
             <a href="../Ecx-story-testimonial/testimonials.html"
               >Testimonials</a
@@ -49,6 +57,33 @@
       <i id="burger" class="fas fa-bars"></i>
       <i id="cancel" class="fas fa-times"></i>
     </nav>
+    <div class="header">
+      <h1 class="heading">Gallery</h1>
+      <h3 class="intro">Pictures From Our Events</h3>
+    </div>
+    <div class="months">
+      <a href="gallery.html" class="month">January</a>
+      <a href="feb.html" class="month">Feburary</a>
+      <a href="march.html" class="month">March</a>
+      <a href="#" class="month">April</a>
+      <a href="may.html" class="month">May</a>
+      <a href="june.html" class="month active">June</a>
+      <a href="july.html" class="month">July</a>
+      <a href="aug.html" class="month">August</a>
+      <a href="sept.html" class="month">September</a>
+      <a href="oct.html" class="month">October</a>
+      <a href="nov.html" class="month">November</a>
+      <a href="dec.html" class="month">December</a>
+    </div>
+
+    <p class="text-secondary">
+      What's a story without memories... <br />
+      Join us on this adventurous ride visually capturing the activities that go
+      on in ECX
+    </p>
+    <h1 class="oops">
+      OOPS!! There was no event recorded in the month of June due to lockdown...
+    </h1>
 
     <!-- footer -->
     <div id="footer">
@@ -107,7 +142,6 @@
         ></a>
       </div>
     </div>
-    <script src="../nav and footer/nav.js"></script>
-    <!-- <script src="nav.js"></script> -->
+    <script src="../navbar and footer/nav.js"></script>
   </body>
 </html>

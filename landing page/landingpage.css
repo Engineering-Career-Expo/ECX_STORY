@@ -17,7 +17,7 @@ a:not(.see-more) {
 
 .header {
   background: url(../images/Rectangle\ 93.png);
-  height: 65vh;
+  height: 70vh;
   max-height: 500px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -49,10 +49,10 @@ a:not(.see-more) {
   padding: 2rem auto;
 }
 .header-text h1 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 .header-text p {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
 .word h4 {
