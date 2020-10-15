@@ -15,7 +15,6 @@ body {
   min-height: 100vh;
   max-height: 100vh;
   position: relative;
-  mix-blend-mode: color-burn;
 }
 .nav1 i {
   padding: 5px;
@@ -108,6 +107,13 @@ form button:hover {
   transform: scale(1.1);
 }
 @media (max-width: 760px) {
+  body {
+    overflow-y: auto;
+  }
+  .header {
+    min-height: 100vh;
+    max-height: 250vh;
+  }
   .content,
   .formlist {
     width: 98vw;
@@ -125,6 +131,7 @@ form button:hover {
   }
   .nav img {
     margin-left: -0.7rem;
+    width: 100px;
   }
   .content {
     text-align: left;
@@ -146,7 +153,20 @@ form button:hover {
   }
   .icons {
     position: relative;
-    margin-top: 1rem;
+    margin-top: 2rem;
     height: 8vh;
+  }
+}
+@media (max-width: 360px) {
+  .content,
+  .formlist {
+    margin-left: 0;
+  }
+  .content1 {
+    margin-left: 1.2rem;
+  }
+  .content {
+    height: 70%;
+    position: static;
   }
 }
