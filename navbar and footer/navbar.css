@@ -10,10 +10,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 15px 25px;
   background: white;
   z-index: 100;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   font-size: 17px;
@@ -31,13 +31,13 @@
 .navbarimg img {
   width: 180px;
   height: 50px;
+  margin-left: 0.8rem;
 }
 .navbarlist ul {
+  width: 67vw;
   display: flex;
   list-style: none;
-}
-.navbarlist li {
-  padding: 0px 25px;
+  justify-content: space-evenly;
 }
 .navbarlist a {
   color: #6a6a6a;
@@ -194,7 +194,7 @@ li hr {
 @media (max-width: 800px) {
   #burger,
   #cancel {
-    display: block;
+    display: inline-block;
     color: #222221;
     font-size: 1.7rem;
   }

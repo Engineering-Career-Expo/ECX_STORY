@@ -6,6 +6,9 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+#nav {
+  position: relative;
+}
 .head {
   text-align: center;
 }
@@ -23,11 +26,25 @@ li {
 header a {
   text-decoration: none;
   color: #6f6f6f;
+  text-align: center;
+}
+header {
+  position: sticky !important;
+  top: -1px;
+  z-index: 80;
 }
 header ul {
+  text-align: center !important;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  background: white;
+  margin: 0.8rem auto;
+}
+.btn-warning {
+  background-color: #ffae2e !important;
 }
 #socialmedia {
   font-size: 140%;
@@ -63,15 +80,11 @@ header ul {
 }
 .footer {
   margin: auto;
-  /* padding-top: 2em; */
 }
 .last {
   margin-bottom: 2em;
 }
-div.scrollmenu {
-  overflow: auto;
-  white-space: nowrap;
-}
+
 @media screen and (max-width: 1000px) {
   .tag {
     margin-top: -3%;
