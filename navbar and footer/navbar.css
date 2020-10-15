@@ -207,14 +207,15 @@ li hr {
   .navbarlist > ul {
     background-color: #fff;
     width: 100vw;
-    line-height: 54px;
+    line-height: 45px;
     text-align: center;
+    overflow-x: hidden;
     display: block;
     position: absolute;
     top: 45px;
     left: 0;
     z-index: 20;
-    transform: translateY(-100vh);
+    transform: translateY(-200vh);
     transition: 0.7s ease;
   }
   .main-list > li {
