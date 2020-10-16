@@ -35,7 +35,6 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding-top: 75px;
 }
 header,
 main,
@@ -66,10 +65,10 @@ header h2 {
   opacity: 1;
 }
 .carousel-control-prev {
-  left: -2rem !important;
+  left: -2.5rem !important;
 }
 .carousel-control-next {
-  right: -2rem !important;
+  right: -2.5rem !important;
 }
 
 .carousel-control-next-icon {
@@ -81,7 +80,6 @@ header h2 {
 .carousel-item,
 video {
   width: 100%;
-  transition: 0.5s ease;
 }
 .carousel-indicators li {
   position: relative !important;
@@ -123,7 +121,7 @@ video {
   padding: 0.8rem;
 }
 .card-text {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   line-height: 1.5;
 }
 
@@ -164,7 +162,7 @@ video {
 }
 
 /* tablet sized media queries */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 760px) {
   body {
     font-size: 17px;
   }

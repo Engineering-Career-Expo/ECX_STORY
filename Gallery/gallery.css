@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,9 +12,15 @@
 body {
   overflow-x: hidden;
   background-color: white;
+  font-family: "Montserrat", sans-serif;
 }
 #nav {
   position: relative;
+}
+.oops {
+  margin: 5rem;
+  height: 70vh;
+  font-size: 1.6rem;
 }
 /* header */
 .header {
@@ -71,6 +79,8 @@ body {
   margin: 0.6rem auto 1rem auto;
   color: var(--grey);
   width: 90vw;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 /* images section */
@@ -127,5 +137,8 @@ body {
   .grid-qt {
     width: 49%;
     margin: auto;
+  }
+  .oops {
+    margin: 1rem;
   }
 }

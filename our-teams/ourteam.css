@@ -9,13 +9,16 @@ body {
 #nav {
   position: relative;
 }
+h1,
+h2 {
+  padding: 1rem auto;
+}
 .head {
   text-align: center;
 }
 .head h1 {
   color: #000000;
   font-weight: 600;
-  margin: 5% 0 0 0;
 }
 .head p {
   color: #6f6f6f;

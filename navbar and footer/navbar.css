@@ -10,10 +10,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 25px;
+  padding: 10px 15px !important;
   background: white;
   z-index: 100;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   font-size: 17px;
@@ -31,7 +31,8 @@
 .navbarimg img {
   width: 180px;
   height: 50px;
-  margin-left: 0.8rem;
+  margin-left: 0;
+  padding-left: 0;
 }
 .navbarlist ul {
   width: 67vw;
@@ -124,6 +125,8 @@ li hr {
 .footer1 img {
   width: 308px;
   height: 90.23px;
+  padding: 0;
+  margin: 0.5rem -1rem;
 }
 .footer22 {
   display: flex;
@@ -204,14 +207,15 @@ li hr {
   .navbarlist > ul {
     background-color: #fff;
     width: 100vw;
-    line-height: 54px;
+    line-height: 45px;
     text-align: center;
+    overflow-x: hidden;
     display: block;
     position: absolute;
     top: 45px;
     left: 0;
     z-index: 20;
-    transform: translateY(-100vh);
+    transform: translateY(-200vh);
     transition: 0.7s ease;
   }
   .main-list > li {
@@ -255,10 +259,12 @@ li hr {
   .footer1 img {
     width: 148.63px;
     height: 43.54px;
+    margin: 0.5rem -0.5rem;
   }
   .footer0 {
     flex-direction: column-reverse;
   }
+  .footer1,
   .footer2,
   .footer3 {
     margin: 0px;
@@ -268,16 +274,8 @@ li hr {
     width: 70%;
   }
 
-  .footer1 p {
-    font-size: 8.3px;
-  }
-  .footer2 a,
-  .footer3 a {
-    font-size: 9.83px;
-  }
-  .footer2 p,
-  .footer3 p {
-    font-size: 15.16px;
+  .footer1 {
+    font-size: 13px;
   }
   .footer2 li,
   .footer3 li {
