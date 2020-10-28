@@ -21,6 +21,7 @@ body {
   margin: 5rem;
   height: 70vh;
   font-size: 1.6rem;
+  text-align: center;
 }
 /* header */
 .header {
@@ -112,20 +113,44 @@ body {
   width: 100%;
   height: 99%;
   border-radius: 10px;
-  transition: 0.6s;
 }
-.grid-qt img:hover,
-.grid-half img:hover {
-  opacity: 0.7;
-  transform: scale(1.02);
+.grid-qt:hover::before,
+.grid-half:hover::before {
+  display: flex;
+  transition: inherit;
+}
+.grid-qt::before,
+.grid-half::before {
+  content: "Ecx-Story";
+  transition: inherit;
+  display: none;
+  user-select: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 175, 46, 0.86);
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
 }
 .grid-half {
+  transition: all 1.2s ease;
   width: 98%;
   height: 100%;
   margin: 0.5rem auto;
+  position: relative;
 }
 
 .grid-qt {
+  transition: all 1.2s ease;
+  position: relative;
   width: 49%;
   padding: 0 0.2rem;
   height: 100%;
