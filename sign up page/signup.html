@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>ECX-Sign Up</title>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <div class="circle"></div>
+        <div class="tri"></div>
+        <div class="square"></div>
+        <div class="sq2"></div>
+        <h1 class="welcome">Welcome To ECX!</h1>
+        <p>
+          You can be part of this, whether you have prior or no prior knowledge
+          in your interested track.
+        </p>
+      </section>
+      <div class="form-wrap">
+        <form action="" method="post">
+          <div class="intro">
+            <img src="../images/ECX-Logo-01_no_background 2.png" alt="logo" />
+            <h1 class="create">Join The Family</h1>
+            <p>
+              Kindly fill in the details to sign up as a member of ECX. You will
+              be communicated to via the contact details given to us. See you on
+              the other side!
+            </p>
+          </div>
+          <hr />
+          <!-- names -->
+          <div class="wrap stretch">
+            <div class="input-wrap w50">
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                placeholder="Enter first Name"
+                id="first-name"
+                required
+              />
+            </div>
+
+            <div class="input-wrap w50">
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                placeholder="Enter last Name"
+                id="last-name"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- email -->
+          <div class="input-wrap w100">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <!-- phone num and age -->
+          <div class="wrap stretch">
+            <!-- phone num -->
+            <div class="input-wrap w50">
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                max="11"
+                min="10"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+
+            <!-- Age -->
+            <div class="input-wrap w50">
+              <label for="age">Age:</label>
+              <input
+                type="number"
+                min="12"
+                max="30"
+                placeholder="Enter Your Age"
+                id="age"
+              />
+            </div>
+          </div>
+
+          <!-- University -->
+          <div class="input-wrap w100">
+            <label for="university">Tertiary Institution:</label>
+            <input
+              type="text"
+              id="university"
+              placeholder="Enter University/ Polytechnic/ College of Edu. / Others"
+              required
+            />
+          </div>
+
+          <!-- Department and level -->
+          <div class="wrap stretch">
+            <div class="input-wrap w50">
+              <label for="dept">Department:</label>
+              <input
+                type="text"
+                id="dept"
+                placeholder="Enter Department"
+                required
+              />
+            </div>
+
+            <div class="input-wrap w50">
+              <label for="level" aria-required="true">Level:</label>
+              <select id="level">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
+                <option value="600">600</option>
+                <option value="700">700</option>
+                <option value="800">800</option>
+                <option value="ND">ND</option>
+                <option value="ND2">ND2</option>
+                <option value="HND">HND</option>
+                <option value="HND2">HND2</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Gender and track  -->
+          <div class="wrap stretch">
+            <div class="input-wrap w50">
+              <label for="gender">Gender:</label>
+              <select id="gender" aria-required="true">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="undefined">Prefer not to say</option>
+              </select>
+            </div>
+            <div class="input-wrap w50">
+              <label for="track">Prefered Track:</label>
+              <select id="track" aria-required="true">
+                <option value="front-end">Front-End Dev</option>
+                <option value="back-end">Back-End Dev</option>
+                <option value="python">Python</option>
+                <option value="mobile">Android/Mobile Dev</option>
+                <option value="ui/ux">UI/UX Design</option>
+                <option value="eng-design">Engineering Design</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- exp -->
+          <fieldset>
+            <legend>Level Of Expertise</legend>
+            <div class="radio">
+              <div class="radio-wrap">
+                <input type="radio" name="exp" id="beg" checked />
+                <label for="beg">Beginner</label>
+              </div>
+              <div class="radio-wrap">
+                <input type="radio" name="exp" id="inter" />
+                <label for="inter">Intermediate</label>
+              </div>
+              <div class="radio-wrap">
+                <input type="radio" name="exp" id="pro" />
+                <label for="pro">Professional</label>
+              </div>
+              <div class="radio-wrap">
+                <input type="radio" name="exp" id="exp" />
+                <label for="exp">Expert</label>
+              </div>
+            </div>
+          </fieldset>
+          <button class="signup-btn" type="submit">Sign Up</button>
+          <p class="msg">
+            &check; &nbsp; Your data has been submitted and is been processed...
+          </p>
+        </form>
+      </div>
+    </main>
+    <script>
+      let form = document.querySelector("form");
+      let btn = document.querySelector(".signup-btn");
+      let msg = document.querySelector(".msg");
+      form.addEventListener("submit", (e) => {
+        btn.textContent = "loading...";
+        setTimeout(() => {
+          btn.textContent = "Sign Up";
+          msg.style.cssText = "transform: scaleY(1);";
+        }, 3000);
+        setTimeout(() => {
+          msg.style.cssText = "transform: scaleY(0); opacity: 0;";
+        }, 9000);
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
