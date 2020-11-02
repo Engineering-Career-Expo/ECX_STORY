@@ -10,6 +10,9 @@ body {
 li {
   list-style: none;
 }
+a{
+  text-decoration: none !;
+}
 .monthlist {
   display: flex;
   align-items: center;
@@ -23,12 +26,12 @@ li {
   margin: 0.8rem auto;
   width: auto;
 }
-.month {
+.monthlist a {
   color: #585858;
   font-weight: 500;
   text-decoration: none;
   margin: 0.6rem 0.9rem;
-  padding: 5px;
+  padding: 8px;
 }
 .month:last-child {
   padding-right: 1rem;
@@ -81,9 +84,7 @@ header h1 {
   background-color: #2980b9;
 }
 .cardbtn {
-  width: 40%;
   font-size: 1rem;
-  margin: 1rem 0 !important;
   padding: 0.8rem;
   text-align: center;
   border: none;
@@ -91,6 +92,17 @@ header h1 {
   background: #38affe;
   font-weight: bold;
   color: white;
+  transition: 0.5s;
+}
+.cardbtn2{
+  font-size: 1rem;
+  padding: 0.8rem;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background: #b10606;
+  font-weight: bold;
+  color: white !important;
   transition: 0.5s;
 }
 .cardbtn:hover,
