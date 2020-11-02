@@ -61,6 +61,8 @@ header ul {
   width: 40%;
   margin-left: 15%;
   margin-bottom: -10%;
+  border: 2px solid white;
+  box-shadow: 2px 2px 7px gray;
 }
 .avatar2 {
   border-radius: 50%;
