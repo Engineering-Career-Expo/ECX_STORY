@@ -111,7 +111,7 @@ li hr {
 /* footer */
 
 #footer {
-  position: relative;
+  position: relative !important;
   font-family: sans-serif;
   padding: 30px;
   background-color: #fff;

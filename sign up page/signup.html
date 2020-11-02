@@ -30,6 +30,11 @@
             <img src="../images/ECX-Logo-01_no_background 2.png" alt="logo" />
             <h1 class="create">Join The Family</h1>
             <p>
+              <span
+                >You can be part of this, whether you have prior or no prior
+                knowledge in your interested track.</span
+              >
+              <br />
               Kindly fill in the details to sign up as a member of ECX. You will
               be communicated to via the contact details given to us. See you on
               the other side!
@@ -42,7 +47,7 @@
               <label for="first-name">First Name:</label>
               <input
                 type="text"
-                placeholder="Enter first Name"
+                placeholder="Enter First Name"
                 id="first-name"
                 required
               />
@@ -52,7 +57,7 @@
               <label for="last-name">Last Name:</label>
               <input
                 type="text"
-                placeholder="Enter last Name"
+                placeholder="Enter Last Name"
                 id="last-name"
                 required
               />
@@ -65,7 +70,7 @@
             <input
               type="email"
               id="email"
-              placeholder="Enter your email"
+              placeholder="Enter Your Email Address"
               required
             />
           </div>
@@ -124,6 +129,7 @@
             <div class="input-wrap w50">
               <label for="level" aria-required="true">Level:</label>
               <select id="level">
+                <option value="null">Select Level</option>
                 <option value="100">100</option>
                 <option value="200">200</option>
                 <option value="300">300</option>
@@ -151,12 +157,13 @@
               </select>
             </div>
             <div class="input-wrap w50">
-              <label for="track">Prefered Track:</label>
+              <label for="track">Preferred Track:</label>
               <select id="track" aria-required="true">
-                <option value="front-end">Front-End Dev</option>
-                <option value="back-end">Back-End Dev</option>
+                <option value="null">Select Track</option>
+                <option value="front-end">Front-End Web Development</option>
+                <option value="back-end">Back-End Web Development</option>
                 <option value="python">Python</option>
-                <option value="mobile">Android/Mobile Dev</option>
+                <option value="mobile">Android/Mobile Development</option>
                 <option value="ui/ux">UI/UX Design</option>
                 <option value="eng-design">Engineering Design</option>
               </select>
@@ -164,11 +171,11 @@
           </div>
 
           <!-- exp -->
-          <fieldset>
+          <fieldset aria-required="true">
             <legend>Level Of Expertise</legend>
             <div class="radio">
               <div class="radio-wrap">
-                <input type="radio" name="exp" id="beg" checked />
+                <input type="radio" name="exp" id="beg" />
                 <label for="beg">Beginner</label>
               </div>
               <div class="radio-wrap">
@@ -185,10 +192,10 @@
               </div>
             </div>
           </fieldset>
-          <button class="signup-btn" type="submit">Sign Up</button>
           <p class="msg">
             &check; &nbsp; Your data has been submitted and is been processed...
           </p>
+          <button class="signup-btn" type="submit">Sign Up</button>
         </form>
       </div>
     </main>
