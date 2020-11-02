@@ -17,12 +17,17 @@ a:not(.see-more) {
 
 .header {
   background: url(../images/Rectangle\ 93.png);
-  height: 80vh;
+  height: 70vh;
   max-height: 90vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
+}
+@media (max-width: 340px) {
+  .header {
+    height: 83vh;
+  }
 }
 
 .header::before,

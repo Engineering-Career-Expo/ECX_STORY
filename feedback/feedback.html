@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECX | Feedback Page</title>
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <div class="top">
+      <img
+        class="img"
+        src="../images/ECX-Logo-01_no_background 2.png"
+        alt="ECX image"
+      />
+      <h1>Feedback Form</h1>
+      <p>We would love to hear your thought and suggesstions.</p>
+    </div>
+    <hr />
+    <form action="" method="post">
+      <div class="mid">
+        <h3>Feedback Type</h3>
+        <div class="feedback-type">
+          <div class="type">
+            <input
+              type="radio"
+              name="feedback type"
+              id="comment"
+              value="comments"
+              required
+            /><label for="comment"> Comments</label>
+          </div>
+          <div class="type">
+            <input
+              type="radio"
+              name="feedback type"
+              value="suggesstions"
+              id="suggestion"
+              required
+            />
+            <label for="suggestion">Suggestions</label>
+          </div>
+          <div class="type">
+            <input
+              type="radio"
+              name="feedback type"
+              id="question"
+              value="questions"
+            />
+            <label for="question"> Questions</label>
+          </div>
+        </div>
+      </div>
+      <div class="mid2">
+        <p>
+          <label
+            >Describe your view:<br /><br />
+            <textarea
+              name="contest_entry"
+              placeholder="No more than 400 characters long"
+              class="mid3"
+              minlength="20"
+              maxlength="400"
+              required
+            ></textarea>
+          </label>
+        </p>
+      </div>
+
+      <label for="name">Name</label>
+      <input type="text" placeholder="Enter Full Name" id="name" required />
+      <label for="email"><b></b>Email</label>
+      <input type="email" placeholder="Enter Your Email" id="email" required />
+      <p class="msg">
+        &check; &nbsp;Thanks for your feedback it means a lot to us :)
+      </p>
+      <input type="submit" class="submit-btn" value="Submit" />
+    </form>
+    <script>
+      let form = document.querySelector("form");
+      let btn = document.querySelector(".submit-btn");
+      let msg = document.querySelector(".msg");
+      form.addEventListener("submit", (e) => {
+        btn.value = "Waiting...";
+        setTimeout(() => {
+          btn.value = "Submit";
+          msg.style.cssText = "display: block;";
+        }, 3000);
+        setTimeout(() => {
+          msg.style.cssText = "display: none;";
+        }, 9000);
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
