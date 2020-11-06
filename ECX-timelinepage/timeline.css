@@ -35,6 +35,10 @@ li {
 .month:last-child {
   padding-right: 3rem;
 }
+.dots,
+.more {
+  display: none;
+}
 
 .monthlist a:hover {
   text-decoration: none !important;
@@ -94,37 +98,57 @@ section {
 .carousel-indicators .active {
   background-color: #2980b9;
 }
-.cardbtn {
-  font-size: 1rem;
-  padding: 0.8rem;
-  text-align: center;
-  border: none;
-  border-radius: 10px;
-  background: #38affe;
-  font-weight: bold;
-  color: white;
-  transition: 0.5s;
+.monthImage .row {
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  margin: auto !important;
 }
-.cardbtn2 {
+.btn-card {
+  margin-bottom: 1rem;
   font-size: 1rem;
   padding: 0.8rem;
   text-align: center;
   border: none;
   border-radius: 10px;
-  background: #b10606;
   font-weight: bold;
   color: white !important;
   transition: 0.5s;
 }
+
+.cardbtn {
+  background: #38affe;
+}
+.cardbtn2 {
+  background: rgba(254, 64, 59, 1);
+}
 .cardbtn:hover,
-.button:hover {
+.button:hover,
+.cardbtn2:hover {
   background-color: #3a3939;
   color: white;
 }
 .card-text {
   padding-bottom: 1rem;
 }
-
+@media (max-width: 500px) {
+  .monthImage .row {
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center;
+  }
+  .monthImage {
+    padding-bottom: 0;
+  }
+  .btn-card {
+    padding: 0.8rem 2rem;
+  }
+  .btn-card-wrap {
+    margin: 1.5rem 1rem;
+  }
+}
 @media only screen and (max-width: 800px) {
   .monthBox {
     width: 80vw;
