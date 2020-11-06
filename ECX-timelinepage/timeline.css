@@ -10,7 +10,6 @@ body {
 li {
   list-style: none;
 }
-
 .monthlist {
   transform: translateX(20px);
   display: flex;
@@ -96,9 +95,7 @@ section {
   background-color: #2980b9;
 }
 .cardbtn {
-  width: 40%;
   font-size: 1rem;
-  margin: 1rem 0 !important;
   padding: 0.8rem;
   text-align: center;
   border: none;
@@ -106,6 +103,17 @@ section {
   background: #38affe;
   font-weight: bold;
   color: white;
+  transition: 0.5s;
+}
+.cardbtn2 {
+  font-size: 1rem;
+  padding: 0.8rem;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background: #b10606;
+  font-weight: bold;
+  color: white !important;
   transition: 0.5s;
 }
 .cardbtn:hover,
