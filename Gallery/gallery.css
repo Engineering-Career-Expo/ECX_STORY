@@ -40,6 +40,7 @@ body {
 }
 /* months div */
 .months {
+  transform: translateX(20px);
   display: flex;
   align-items: center;
   position: sticky;
@@ -57,10 +58,10 @@ body {
   color: var(--grey);
   font-weight: 500;
   text-decoration: none;
-  margin: 0.6rem 0.9rem;
+  margin: 0.6rem 0.4rem;
 }
 .month:last-child {
-  padding-right: 1rem;
+  padding-right: 3rem;
 }
 
 .month:hover {
@@ -131,7 +132,7 @@ body {
   align-items: stretch;
   flex-wrap: wrap;
   max-width: 100%;
-  margin: 0.5rem auto;
+  margin: 0.7rem auto;
   height: 35vh;
   position: static;
   min-height: 250px;
@@ -139,7 +140,6 @@ body {
 
 .row1,
 .row2 {
-  margin: 0.7rem auto;
   height: 35%;
 }
 .grid-qt img,
@@ -175,6 +175,10 @@ body {
     width: 49%;
     margin: 0 auto;
   }
+  .row1,
+  .row2 {
+    margin: 1.4rem auto;
+  }
   .oops {
     margin: 1rem;
   }
@@ -188,5 +192,6 @@ body {
 @media (min-width: 1024px) {
   .months {
     justify-content: space-evenly;
+    width: 100vw;
   }
 }

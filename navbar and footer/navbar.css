@@ -24,6 +24,14 @@
   content: "";
   display: none;
 }
+.hr {
+  border-bottom: 3px solid #38affe;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem !important;
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+}
 #burger,
 #cancel {
   display: none;
@@ -40,6 +48,7 @@
   list-style: none;
   justify-content: space-evenly;
 }
+
 .navbarlist a {
   color: #6a6a6a;
   text-decoration: none;
@@ -60,9 +69,8 @@
 .arrow {
   background-color: #fe403b;
   color: #fff;
-  border-radius: 5px;
-  border: 1px solid #e5e5e5;
-  padding: 3px;
+  border-radius: 10px;
+  padding: 1rem;
   margin-top: 60px;
 }
 
@@ -137,7 +145,7 @@ li hr {
 }
 .footer1 p {
   color: #6a6a6a;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400px;
   line-height: 21.94px;
 }
@@ -224,6 +232,7 @@ li hr {
     padding: 0;
     border-bottom: 1px solid grey;
   }
+
   .main-list a {
     display: block;
     padding: 0;
@@ -272,6 +281,10 @@ li hr {
 
   .footer1 {
     width: 70%;
+  }
+  .footer2 a,
+  .footer3 a {
+    font-size: 15px;
   }
 
   .footer1 {

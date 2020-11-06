@@ -105,10 +105,16 @@ video {
   width: 46%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-align: left;
   margin: 2rem auto;
   border-radius: 15px;
+}
+@media (max-width: 380px) {
+  .twitter-card,
+  .student-card {
+    width: 80%;
+  }
 }
 
 .student-card {
@@ -121,7 +127,7 @@ video {
   padding: 0.8rem;
 }
 .card-text {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   line-height: 1.5;
 }
 
@@ -142,11 +148,11 @@ video {
 }
 
 .info-text p {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 
 .info-text > h3 {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 
 .student-card img {
@@ -162,7 +168,7 @@ video {
 }
 
 /* tablet sized media queries */
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 820px) {
   body {
     font-size: 17px;
   }
