@@ -1,5 +1,4 @@
 
-
 let drop1 = document.querySelector("#cancel");
 let drop = document.querySelector(".navbarlist ul");
 

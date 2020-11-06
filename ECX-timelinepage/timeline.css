@@ -10,10 +10,8 @@ body {
 li {
   list-style: none;
 }
-a{
-  text-decoration: none !;
-}
 .monthlist {
+  transform: translateX(20px);
   display: flex;
   align-items: center;
   position: sticky;
@@ -26,15 +24,20 @@ a{
   margin: 0.8rem auto;
   width: auto;
 }
-.monthlist a {
-  color: #585858;
+
+.month {
+  color: var(--grey);
   font-weight: 500;
   text-decoration: none;
-  margin: 0.6rem 0.9rem;
-  padding: 8px;
+  margin: 0.6rem 0.4rem;
+  padding: 0.4rem 0.6rem;
 }
 .month:last-child {
-  padding-right: 1rem;
+  padding-right: 3rem;
+}
+.dots,
+.more {
+  display: none;
 }
 
 .monthlist a:hover {
@@ -52,6 +55,7 @@ header h1 {
 
 .monthImage {
   border-radius: 27.5477px !important;
+  padding-bottom: 1rem;
 }
 .monthBody h5 {
   font-weight: 600;
@@ -60,15 +64,26 @@ header h1 {
 .monthBody p {
   color: #6f6f6f;
 }
-
+/* .container.months,
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  max-width: 100vw !important;
+} */
 .monthBox {
   background: #ffffff;
   box-shadow: 0px 2px 6.88691px 2px rgba(98, 98, 98, 0.22);
   border-radius: 27px;
   width: 70vw;
-  margin: 2rem auto !important;
+  /* max-width: 700px; */
+  /* width: 40vw; */
+  margin: 3rem auto !important;
 }
+
 .carousel-item img {
+  height: 220px;
   border-radius: 20px 20px 0 0;
 }
 .carousel-indicators li {
@@ -83,37 +98,57 @@ header h1 {
 .carousel-indicators .active {
   background-color: #2980b9;
 }
-.cardbtn {
-  font-size: 1rem;
-  padding: 0.8rem;
-  text-align: center;
-  border: none;
-  border-radius: 10px;
-  background: #38affe;
-  font-weight: bold;
-  color: white;
-  transition: 0.5s;
+.monthImage .row {
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  margin: auto !important;
 }
-.cardbtn2{
+.btn-card {
+  margin-bottom: 1rem;
   font-size: 1rem;
   padding: 0.8rem;
   text-align: center;
   border: none;
   border-radius: 10px;
-  background: #b10606;
   font-weight: bold;
   color: white !important;
   transition: 0.5s;
 }
+
+.cardbtn {
+  background: #38affe;
+}
+.cardbtn2 {
+  background: rgba(254, 64, 59, 1);
+}
 .cardbtn:hover,
-.button:hover {
+.button:hover,
+.cardbtn2:hover {
   background-color: #3a3939;
   color: white;
 }
 .card-text {
   padding-bottom: 1rem;
 }
-
+@media (max-width: 500px) {
+  .monthImage .row {
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center;
+  }
+  .monthImage {
+    padding-bottom: 0;
+  }
+  .btn-card {
+    padding: 0.8rem 2rem;
+  }
+  .btn-card-wrap {
+    margin: 1.5rem 1rem;
+  }
+}
 @media only screen and (max-width: 800px) {
   .monthBox {
     width: 80vw;
@@ -121,7 +156,8 @@ header h1 {
   }
 }
 @media (min-width: 1024px) {
-  .months {
+  .monthlist {
     justify-content: space-evenly;
+    width: 100vw;
   }
 }
