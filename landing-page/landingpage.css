@@ -1,17 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Nunito" !important;
   background-color: white;
   width: 100vw;
   overflow-x: hidden !important;
 }
 
-a:not(.see-more) {
-  text-decoration: none;
+a {
+  text-decoration: none !important;
   color: white;
 }
 a:hover {
@@ -72,17 +74,20 @@ a:hover {
 .upto {
   text-align: center;
   width: 85vw;
+  padding: 1.5rem;
   margin: 1.5rem auto;
   height: auto;
 }
 
 .button {
-  width: 40%;
+  width: 50%;
   background: rgba(254, 64, 59, 1);
   border: none;
   text-align: center;
+  color: white;
   border-radius: 5px;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
 }
 
 .cardcontainer {
@@ -96,17 +101,17 @@ a:hover {
 }
 .cards {
   border-radius: 15px;
-  width: 80%;
+  width: 90%;
   position: relative;
-  max-width: 400px;
-  height: auto;
+  max-width: 300px;
   box-shadow: -1px 1px 3px 1px #5353535b;
-  padding-bottom: 0.6rem;
+  padding-bottom: 1rem;
   margin: 1rem auto;
+  height: auto;
+  align-items: stretch;
 }
 .cardTitle {
   font-weight: 600;
-  margin-bottom: 0.8rem;
   font-size: 1.2rem;
 }
 
@@ -115,27 +120,42 @@ a:hover {
   line-height: 1.3;
 }
 .cards img {
-  height: 160px;
+  height: 150px;
   width: 100%;
   border-radius: 15px 15px 0 0;
 }
-.cards,
-.cards-info {
+@media (min-width: 760px) {
+  .cards img {
+    height: 45%;
+  }
+}
+.cards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.cards-info,
+
 .card-text {
   margin: 1rem;
-  text-align: left;
   line-height: 1;
+  text-align: left;
+}
+.cards-info {
+  text-align: left;
+  height: 83%;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.cards-info p,
+.cards-info h5 {
+  margin: 1rem;
 }
 
 .cardbtn {
   width: 40vw;
   font-size: 1rem;
   margin: 1rem;
+  color: white;
   padding: 0.8rem;
   height: 60px;
   text-align: center;
@@ -163,7 +183,6 @@ a:hover {
   display: flex;
 }
 #ecx1,
-#ecx5,
 #ecx6 {
   display: none;
 }
@@ -179,23 +198,23 @@ a:hover {
   width: 42%;
 }
 #ecx1 {
-  background-image: url(../images/Rectangle\ 17.png);
+  background-image: url(../images/mar10.jpg);
 }
 
 #ecx2 {
-  background-image: url(../images/Rectangle\ 6.png);
+  background-image: url(../images/mar13.jpg);
 }
 #ecx3 {
-  background-image: url(../images/Rectangle\ 26.png);
+  background-image: url(../images/apr-cont.jpg);
 }
 #ecx4 {
-  background-image: url(../images/Rectangle\ 23.png);
+  background-image: url(../images/jan1.jpg);
 }
 #ecx5 {
-  background-image: url(../images/Rectangle\ 20.png);
+  background-image: url(../images/july1.jpg);
 }
 #ecx6 {
-  background-image: url(../images/Welcome\ Image\ 2.png);
+  background-image: url(../images/feb1.jpg);
 }
 
 .griditems {
@@ -382,16 +401,12 @@ video {
     font-size: 1rem;
   }
   .cards {
-    display: block;
-    width: 30%;
+    width: 25%;
     min-width: 280px;
+    height: 430px;
   }
   .word h4 {
     font-weight: 600;
-  }
-  .button {
-    position: absolute;
-    bottom: 1rem;
   }
   .cardcontainer {
     flex-direction: row;
@@ -470,12 +485,9 @@ video {
 }
 @media only screen and (min-width: 1024px) {
   .carousel-control-prev {
-    left: -5rem !important;
-  }
-  .cardcontainer {
-    height: 50vh;
+    left: -6rem !important;
   }
   .carousel-control-next {
-    right: -5rem !important;
+    right: -6rem !important;
   }
 }

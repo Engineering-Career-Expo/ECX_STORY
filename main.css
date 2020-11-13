@@ -96,9 +96,11 @@ body {
 form button {
   cursor: pointer;
 }
+.link:first-child {
+  margin-right: 15px;
+}
 .icons * {
   color: #fff;
-  margin-right: 15px;
   transition: 0.6s;
 }
 form button:hover {
@@ -148,7 +150,8 @@ form button:hover {
   }
   .icons {
     position: relative;
-    margin-top: 2rem;
     height: 8vh;
+    margin: auto;
+    margin-top: 2rem;
   }
 }

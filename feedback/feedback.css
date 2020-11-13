@@ -7,7 +7,7 @@ body {
   padding: 8px;
 }
 ::placeholder {
-  font-family: cursive;
+  font-family: sans-serif;
 }
 .top {
   text-align: center;
@@ -40,15 +40,11 @@ label {
   padding: 0.5rem 1rem;
   transform-origin: top;
   width: 95%;
-  display: none;
-  animation: msg 0.5s ease forwards;
+  display: block;
+  transition: 0.5s;
 }
-@keyframes msg {
-  to {
-    transform: scaleY(1);
-  }
-}
-input[type="submit"] {
+
+.signup-btn {
   background-color: #38affe;
   border: none;
   outline: none;
@@ -96,7 +92,7 @@ textarea:focus {
 }
 
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #38affe;
   margin-bottom: 25px;
 }
 @media (min-width: 800px) {

@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
   overflow-x: hidden !important;
   font-size: 14px;
 }
@@ -28,15 +30,24 @@ h2 {
   justify-content: space-evenly;
   align-items: stretch;
 }
-
+.head p {
+  font-size: 1.1rem;
+}
+.btn {
+  font-size: 0.9rem !important;
+}
 .row.container,
 .row.section {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
   height: auto;
+  min-height: 40vh;
   width: 95vw;
   margin: auto !important;
+}
+ul.container {
+  padding: 0 !important;
 }
 .row h2 {
   margin: 0 2rem;
@@ -73,15 +84,18 @@ h2 {
 .col-lg-5 {
   margin: 6rem auto;
   margin-bottom: 3rem;
-  max-width: 27% !important;
-  min-width: 310px;
+  max-width: 26% !important;
+  min-width: 290px;
   padding: 0 !important;
-  height: 100% !important;
-  min-height: 44vh;
+  height: auto !important;
   flex: auto !important;
   position: relative !important;
   box-shadow: 2px 2px 5px gray;
   border-radius: 10px;
+}
+.hr {
+  margin: 3rem auto !important;
+  border-color: #ffae2e !important;
 }
 .row h2 {
   margin: 1rem 2rem;
@@ -105,6 +119,7 @@ header a {
   text-decoration: none;
   color: #6f6f6f;
   text-align: center;
+  font-size: 0.8rem;
 }
 header {
   position: sticky !important;
@@ -128,8 +143,8 @@ header ul,
 @media (min-width: 1024px) {
   header ul,
   .row.header {
-    justify-content: space-evenly;
-    width: 100vw;
+    justify-content: space-between;
+    max-width: 100vw;
     overflow-x: hidden;
   }
 }

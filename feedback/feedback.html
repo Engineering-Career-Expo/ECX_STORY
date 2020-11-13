@@ -14,7 +14,7 @@
         alt="ECX image"
       />
       <h1>Feedback Form</h1>
-      <p>We would love to hear your thought and suggesstions.</p>
+      <p>We would love to hear your thoughts...</p>
     </div>
     <hr />
     <form action="" method="post">
@@ -58,7 +58,7 @@
             <textarea
               name="contest_entry"
               placeholder="No more than 400 characters long"
-              class="mid3"
+              class="mid3 textarea"
               minlength="20"
               maxlength="400"
               required
@@ -74,20 +74,28 @@
       <p class="msg">
         &check; &nbsp;Thanks for your feedback it means a lot to us :)
       </p>
-      <input type="submit" class="submit-btn" value="Submit" />
+      <button class="signup-btn" type="submit">Sign Up</button>
     </form>
     <script>
       let form = document.querySelector("form");
-      let btn = document.querySelector(".submit-btn");
+      let btn = document.querySelector(".signup-btn");
       let msg = document.querySelector(".msg");
+
+      //form submit function
       form.addEventListener("submit", (e) => {
-        btn.value = "Waiting...";
+        btn.textContent = "loading...";
         setTimeout(() => {
-          btn.value = "Submit";
-          msg.style.cssText = "display: block;";
+          btn.textContent = "Sign Up";
+          msg.style.cssText = "transform: scaleY(1);"; //error msg displays
+          // clear inputs on submit
+          let inputs = document.querySelectorAll("input, select, textarea");
+          Array.from(inputs).forEach((input) => {
+            if (input.type.toLowerCase() == "radio") input.checked = false;
+            else input.value = "";
+          });
         }, 3000);
         setTimeout(() => {
-          msg.style.cssText = "display: none;";
+          msg.style.cssText = "transform: scaleY(0); opacity: 0;"; //removes display message
         }, 9000);
         e.preventDefault();
       });

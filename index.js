@@ -3,7 +3,7 @@ const $ = e => document.querySelector(e);
 const getId = e => document.getElementById(e);
 
 // grab elements
-const formBtn = $("form .button");
+const form = $("form");
 let hiName = $("#hiName");
 const email = getId("email");
 const names = getId("name");
@@ -11,6 +11,7 @@ let getName, setName, nameArr, lastName;
 
 
 let formGet = (e) => {
+    e.preventDefault();
     emailPattern = /\S+@\S+\.\S+/;
     nameArr = names.value.split(" ");//split the input name into an array
     lastName = nameArr[nameArr.length - 1];//extract the last name
@@ -28,10 +29,5 @@ let formGet = (e) => {
     }
 }
 
-window.onload = event => {
-    // get name from local storage and display on home page
-    getName = localStorage.getItem('name');
-    hiName.textContent = `HI ${getName}!`;
-}
-
-formBtn.addEventListener('click', formGet);
+hiName.innerHTML = `HI ${localStorage.getItem('name')}!`;
+form.addEventListener('submit', formGet);

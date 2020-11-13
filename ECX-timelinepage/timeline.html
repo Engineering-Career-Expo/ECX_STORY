@@ -6,13 +6,13 @@
     <title>Timeline</title>
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
 
     <link rel="stylesheet" href="timeline.css" />
-    <link rel="stylesheet" href="../navbar and footer/navbar.css" />
+    <link rel="stylesheet" href="../navbar-and-footer/navbar.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -30,13 +30,17 @@
       </div>
       <div class="navbarlist">
         <ul class="main-list">
-          <li><a href="../landing page/landingpage.html">Home</a></li>
           <li>
-            <a class="activeNav" href="../ECX-timelinepage/timeline.html"
-              >Timeline</a
+            <a href="../landing-page/landingpage.html">Home</a>
+          </li>
+          <li class="activeNav">
+            <a href="../ECX-timelinepage/timeline.html">Timeline</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noreferrer" href="../Gallery/gallery.html"
+              >Gallery</a
             >
           </li>
-          <li><a href="../Gallery/gallery.html">Gallery</a></li>
           <li>
             <a href="../Ecx-story-testimonial/testimonials.html"
               >Testimonials</a
@@ -159,24 +163,27 @@
             </div>
 
             <div class="card-body monthBody" data-city="january">
-              <h5 class="card-title">JANUARY- ABOUT ECX</h5>
-              <p class="card-text">
-                What’s a program without some orientation? We started the
-                peculiar year 2020 with the ECX info session to create awareness
-                to the students especially the freshers about ECX, what we do,
-                our core values, mission and how to join the community.
-                <span class="dots">...</span>
-                <br />
-                <span class="more"
-                  >erisque enim ligula venenatis dolor. Maecenas nisl est,
-                  ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                  vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                  ullamcorper ipsum dignissim ac. In at libero sed nunc
-                  venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                  tellus gravida venenatis. Integer fringilla congue eros non
-                  fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-                >
-              </p>
+              <div class="text-wrap">
+                <h5 class="card-title">JANUARY- ABOUT ECX</h5>
+                <p class="card-text">
+                  What’s a program without some orientation? We started the
+                  peculiar year 2020 with the ECX info session to create
+                  awareness to the students especially the freshers about ECX,
+                  <span class="dots">...</span>
+                  <br />
+                  <span class="more"
+                    >what we do, our core values, mission and how to join the
+                    community. erisque enim ligula venenatis dolor. Maecenas
+                    nisl est, ultrices nec congue eget, auctor vitae massa.
+                    Fusce luctus vestibulum augue ut aliquet. Nunc sagittis
+                    dictum nisi, sed ullamcorper ipsum dignissim ac. In at
+                    libero sed nunc venenatis imperdiet sed ornare turpis. Donec
+                    vitae dui eget tellus gravida venenatis. Integer fringilla
+                    congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+                    porta.</span
+                  >
+                </p>
+              </div>
               <div class="row">
                 <div class="btn-card-wrap">
                   <a
@@ -272,27 +279,29 @@
             </div>
 
             <div class="card-body monthBody" data-city="february">
-              <h5 class="card-title">FEBRUARY - CALL TO REGISTER</h5>
-              <p class="card-text">
-                The ECX application form was officially opened for interested
-                students to register for our weekly classes and get to be
-                members of our community.
-                <span class="dots">...</span>
-                <br />
-                <span class="more"
-                  >erisque enim ligula venenatis dolor. Maecenas nisl est,
-                  ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                  vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                  ullamcorper ipsum dignissim ac. In at libero sed nunc
-                  venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                  tellus gravida venenatis. Integer fringilla congue eros non
-                  fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-                >
-              </p>
+              <div class="text-wrap">
+                <h5 class="card-title">FEBRUARY - CALL TO REGISTER</h5>
+                <p class="card-text">
+                  The ECX application form was officially opened for interested
+                  students to register for our weekly classes and get to be
+                  members of our community.
+                  <span class="dots">...</span>
+                  <br />
+                  <span class="more"
+                    >erisque enim ligula venenatis dolor. Maecenas nisl est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                    vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                    ullamcorper ipsum dignissim ac. In at libero sed nunc
+                    venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                    tellus gravida venenatis. Integer fringilla congue eros non
+                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+                  >
+                </p>
+              </div>
               <div class="row">
                 <div class="btn-card-wrap">
                   <a
-                    href="../Gallery/gallery.html"
+                    href="../Gallery/feb.html"
                     target="_blank"
                     class="btn-card cardbtn"
                   >
@@ -384,29 +393,31 @@
             </div>
 
             <div class="card-body monthBody" data-city="march">
-              <h5 class="card-title">MARCH - CLASSES BEGIN!</h5>
-              <p class="card-text">
-                In this month we introduced and began weekly classes, held on
-                Wednesdays and Fridays for students in the following tracks:
-                Android Design, Back End Development, Engineering Design, Front
-                End Development, Python and UI/UX Design.
+              <div class="text-wrap">
+                <h5 class="card-title">MARCH - CLASSES BEGIN!</h5>
+                <p class="card-text">
+                  In this month we introduced and began weekly classes, held on
+                  Wednesdays and Fridays for students in the following tracks:
+                  Android Design, Back End Development, Engineering Design,
+                  Front End Development, Python and UI/UX Design.
 
-                <span class="dots">...</span>
-                <br />
-                <span class="more"
-                  >erisque enim ligula venenatis dolor. Maecenas nisl est,
-                  ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                  vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                  ullamcorper ipsum dignissim ac. In at libero sed nunc
-                  venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                  tellus gravida venenatis. Integer fringilla congue eros non
-                  fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-                >
-              </p>
+                  <span class="dots">...</span>
+                  <br />
+                  <span class="more"
+                    >erisque enim ligula venenatis dolor. Maecenas nisl est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                    vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                    ullamcorper ipsum dignissim ac. In at libero sed nunc
+                    venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                    tellus gravida venenatis. Integer fringilla congue eros non
+                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+                  >
+                </p>
+              </div>
               <div class="row">
                 <div class="btn-card-wrap">
                   <a
-                    href="../Gallery/gallery.html"
+                    href="../Gallery/march.html"
                     target="_blank"
                     class="btn-card cardbtn"
                   >
@@ -498,31 +509,36 @@
             </div>
 
             <div class="card-body monthBody" data-city="april">
-              <h5 class="card-title">APRIL - #30DaysOfCode #30DaysOfDesign</h5>
-              <p class="card-text">
-                Academic calendars were cut as a result of the Coronavirus
-                pandemic. Schools were closed and there was no chance of
-                continuing our weekly physical classes. ECX in it's drive not to
-                leave students idle during this time introduced
-                #30daysOfCode/Design where students were assigned daily tasks. A
-                leaderboard was also built to put in the competition factor,
-                which thrived students to work harder.
-                <span class="dots">...</span>
-                <br />
-                <span class="more"
-                  >erisque enim ligula venenatis dolor. Maecenas nisl est,
-                  ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                  vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                  ullamcorper ipsum dignissim ac. In at libero sed nunc
-                  venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                  tellus gravida venenatis. Integer fringilla congue eros non
-                  fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-                >
-              </p>
+              <div class="text-wrap">
+                <h5 class="card-title">
+                  APRIL - #30DaysOfCode #30DaysOfDesign
+                </h5>
+                <p class="card-text">
+                  Academic calendars were cut as a result of the Coronavirus
+                  pandemic. Schools were closed and there was no chance of
+                  continuing our weekly physical classes. ECX in it's drive not
+                  to leave students idle during this time introduced
+
+                  <span class="dots">...</span>
+                  <br />
+                  <span class="more"
+                    >#30daysOfCode/Design where students were assigned daily
+                    tasks. A leaderboard was also built to put in the
+                    competition factor, which thrived students to work harder.
+                    erisque enim ligula venenatis dolor. Maecenas nisl est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                    vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                    ullamcorper ipsum dignissim ac. In at libero sed nunc
+                    venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                    tellus gravida venenatis. Integer fringilla congue eros non
+                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+                  >
+                </p>
+              </div>
               <div class="row">
                 <div class="btn-card-wrap">
                   <a
-                    href="../Gallery/gallery.html"
+                    href="../Gallery/april.html"
                     target="_blank"
                     class="btn-card cardbtn"
                   >
@@ -614,46 +630,44 @@
             </div>
 
             <div class="card-body monthBody" data-city="may">
-              <h5 class="card-title">
-                MAY - MAY CHALLENGE + THE NEXT CONFERENCE
-              </h5>
-              <p class="card-text">
-                The ravaging pandemic that hit our space gave room for much to
-                be done. In this month we had two events which were the May
-                Challenge and The NEXT Conference MAY CHALLENGE What’s ECX
-                without some fun? We understand how uncertain the time was with
-                the CoronaVirus pandemic and everything going on around the
-                world. We wanted to lighten the mood and atmosphere so we
-                introduced the May challenge.This was a fun game where students
-                answered light-hearted questions about their ECX experiences -
-                their favorite parts about ECX, its tutors and a lot more! THE
-                NEXT CONFERENCE The ECX community saw the need to enlighten its
-                students on certain issues during the pandemic in accordance to
-                its mission, empower young and vibrant students in not just
-                technical, but also life-demanded soft skills, so we held the
-                NEXT conference.The conference was also sponsored by other
-                organizations like PAADC and KwaraBuild. Our resource persons
-                talked on topics like how to overcome depression, how to
-                overcome imposter syndrome, how to excel at public speaking and
-                presentation, how to leverage tech to build wealth and also
-                learning soft skills such as entrepreneurship skills,
-                negotiation skills. Certificates were awarded to participants.
-                <span class="dots">...</span>
-                <br />
-                <span class="more"
-                  >erisque enim ligula venenatis dolor. Maecenas nisl est,
-                  ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                  vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                  ullamcorper ipsum dignissim ac. In at libero sed nunc
-                  venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                  tellus gravida venenatis. Integer fringilla congue eros non
-                  fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-                >
-              </p>
+              <div class="text-wrap">
+                <h5 class="card-title">
+                  MAY - MAY CHALLENGE + THE NEXT CONFERENCE
+                </h5>
+                <p class="card-text">
+                  The ravaging pandemic that hit our space gave room for much to
+                  be done. In this month we had two events which were the May
+                  Challenge and The NEXT Conference MAY CHALLENGE What’s ECX
+                  without some fun?
+                  <span class="dots">...</span>
+                  <br />
+                  <span class="more"
+                    >We understand how uncertain the time was with the
+                    CoronaVirus pandemic and everything going on around the
+                    world. We wanted to lighten the mood and atmosphere so we
+                    introduced the May challenge.This was a fun game where
+                    students answered light-hearted questions about their ECX
+                    experiences - their favorite parts about ECX, its tutors and
+                    a lot more! THE NEXT CONFERENCE The ECX community saw the
+                    need to enlighten its students on certain issues during the
+                    pandemic in accordance to its mission, empower young and
+                    vibrant students in not just technical, but also
+                    life-demanded soft skills, so we held the NEXT
+                    conference.The conference was also sponsored by other
+                    organizations like PAADC and KwaraBuild. Our resource
+                    persons talked on topics like how to overcome depression,
+                    how to overcome imposter syndrome, how to excel at public
+                    speaking and presentation, how to leverage tech to build
+                    wealth and also learning soft skills such as
+                    entrepreneurship skills, negotiation skills. Certificates
+                    were awarded to participants.</span
+                  >
+                </p>
+              </div>
               <div class="row">
                 <div class="btn-card-wrap">
                   <a
-                    href="../Gallery/gallery.html"
+                    href="../Gallery/may.html"
                     target="_blank"
                     class="btn-card cardbtn"
                   >
@@ -742,29 +756,31 @@
             </div>
 
             <div class="card-body monthBody" data-city="july">
-              <h5 class="card-title">JULY - CALL FOR INTERNSHIP</h5>
-              <p class="card-text">
-                Application was officially opened for the first of its kind ECX
-                Internship. Due to the pandemic, it was virtual. Many
-                applications were submitted and ECX after careful screening of
-                applicants through a series of conducted tests shortlisted
-                candidates for the internship.
-                <span class="dots">...</span>
-                <br />
-                <span class="more"
-                  >erisque enim ligula venenatis dolor. Maecenas nisl est,
-                  ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                  vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                  ullamcorper ipsum dignissim ac. In at libero sed nunc
-                  venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                  tellus gravida venenatis. Integer fringilla congue eros non
-                  fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-                >
-              </p>
+              <div class="text-wrap">
+                <h5 class="card-title">JULY - CALL FOR INTERNSHIP</h5>
+                <p class="card-text">
+                  Application was officially opened for the first of its kind
+                  ECX Internship. Due to the pandemic, it was virtual. Many
+                  applications were submitted and ECX after careful screening of
+                  applicants through a series of conducted tests shortlisted
+                  candidates for the internship.
+                  <span class="dots">...</span>
+                  <br />
+                  <span class="more"
+                    >erisque enim ligula venenatis dolor. Maecenas nisl est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                    vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                    ullamcorper ipsum dignissim ac. In at libero sed nunc
+                    venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                    tellus gravida venenatis. Integer fringilla congue eros non
+                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+                  >
+                </p>
+              </div>
               <div class="row">
                 <div class="btn-card-wrap">
                   <a
-                    href="../Gallery/gallery.html"
+                    href="../Gallery/july.html"
                     target="_blank"
                     class="btn-card cardbtn"
                   >
@@ -853,28 +869,29 @@
             </div>
 
             <div class="card-body monthBody" data-city="august">
-              <h5 class="card-title">AUGUST - ECX INTERNSHIP</h5>
-              <p class="card-text">
-                The internship was held in August. Interns were grouped into
-                teams with diverse technical tracks. Each team comprised a
-                content creator, web developer, UI/UX designer and mobile
-                developer. There were also machine learning interns who because
-                of the nature of the track could not be grouped into teams like
-                others. The teams were assigned weekly projects, which were
-                closely supervised and supported by mentors with deadlines on
-                submissions.
-                <span class="dots">...</span>
-                <br />
-                <span class="more"
-                  >erisque enim ligula venenatis dolor. Maecenas nisl est,
-                  ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                  vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                  ullamcorper ipsum dignissim ac. In at libero sed nunc
-                  venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                  tellus gravida venenatis. Integer fringilla congue eros non
-                  fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-                >
-              </p>
+              <div class="text-wrap">
+                <h5 class="card-title">AUGUST - ECX INTERNSHIP</h5>
+                <p class="card-text">
+                  The internship was held in August. Interns were grouped into
+                  teams with diverse technical tracks. Each team comprised a
+                  content creator, web developer, UI/UX designer and mobile
+                  developer.
+                  <span class="dots">...</span>
+                  <br />
+                  <span class="more"
+                    >There were also machine learning interns who because of the
+                    nature of the track could not be grouped into teams like
+                    others. The teams were assigned weekly projects, which were
+                    closely supervised and supported by mentors with deadlines
+                    on submissions. erisque enim ligula venenatis dolor.
+                    Maecenas nisl est, ultrices nec congue eget, auctor vitae
+                    massa. Fusce luctus vestibulum augue ut aliquet. Nunc
+                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
+                    at libero sed nunc venenatis imperdiet sed ornare turpis.
+                    Donec vitae dui eget tellus gravida venenatis.</span
+                  >
+                </p>
+              </div>
               <div class="row">
                 <div class="btn-card-wrap">
                   <a
@@ -921,7 +938,7 @@
                 ></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" role="listbox">
                   <img
                     src="../images/sept1.jpg"
                     class="card-img-top d-block w-100"
@@ -970,32 +987,34 @@
             </div>
 
             <div class="card-body monthBody" data-city="september">
-              <h5 class="card-title">
-                SEPTEMBER - PRESENTATION OF INTERNSHIP CERTIFICATES AND CALL TO
-                REGISTER FOR HackX
-              </h5>
-              <p class="card-text">
-                By September, the ECX internship had come to an end.
-                Certificates were awarded to interns that successfully made it
-                through and to our dedicated mentors. ECX began to promote the
-                call to register for her last event for the edition:
-                <b> HackX. </b>
-                <span class="dots">...</span>
-                <br />
-                <span class="more"
-                  >erisque enim ligula venenatis dolor. Maecenas nisl est,
-                  ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                  vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                  ullamcorper ipsum dignissim ac. In at libero sed nunc
-                  venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                  tellus gravida venenatis. Integer fringilla congue eros non
-                  fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-                >
-              </p>
+              <div class="text-wrap">
+                <h5 class="card-title">
+                  SEPTEMBER - PRESENTATION OF INTERNSHIP CERTIFICATES AND CALL
+                  TO REGISTER FOR HackX
+                </h5>
+                <p class="card-text">
+                  By September, the ECX internship had come to an end.
+                  Certificates were awarded to interns that successfully made it
+                  through and to our dedicated mentors. ECX began to promote the
+                  call to register for her last event for the edition:
+                  <b> HackX. </b>
+                  <span class="dots">...</span>
+                  <br />
+                  <span class="more"
+                    >erisque enim ligula venenatis dolor. Maecenas nisl est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                    vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                    ullamcorper ipsum dignissim ac. In at libero sed nunc
+                    venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                    tellus gravida venenatis. Integer fringilla congue eros non
+                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+                  >
+                </p>
+              </div>
               <div class="row">
                 <div class="btn-card-wrap">
                   <a
-                    href="../Gallery/gallery.html"
+                    href="../Gallery/sept.html"
                     target="_blank"
                     class="btn-card cardbtn"
                   >
@@ -1087,33 +1106,35 @@
             </div>
 
             <div class="card-body monthBody" data-city="october">
-              <h5 class="card-title">OCTOBER - HackX</h5>
-              <p class="card-text">
-                <b> HackX </b>is ECX first ever Hackathon. It is opened to
-                designer and developers. HackX is the ground for putting skills
-                to test, building a team, competing with friends and WINING LIKE
-                A BOSS.
-                <b> #HackX </b>
-                <b> #Code </b>
-                <b> #FourTracks </b>
-                <b> #FourSectors </b>
-                <b> #Deploy#Present </b>
-                <span class="dots">...</span>
-                <br />
-                <span class="more"
-                  >erisque enim ligula venenatis dolor. Maecenas nisl est,
-                  ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                  vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                  ullamcorper ipsum dignissim ac. In at libero sed nunc
-                  venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                  tellus gravida venenatis. Integer fringilla congue eros non
-                  fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-                >
-              </p>
+              <div class="text-wrap">
+                <h5 class="card-title">OCTOBER - HackX</h5>
+                <p class="card-text">
+                  <b> HackX </b>is ECX first ever Hackathon. It is opened to
+                  designer and developers. HackX is the ground for putting
+                  skills to test, building a team, competing with friends and
+                  WINING LIKE A BOSS.
+                  <b> #HackX </b>
+                  <b> #Code </b>
+                  <b> #FourTracks </b>
+                  <b> #FourSectors </b>
+                  <b> #Deploy#Present </b>
+                  <span class="dots">...</span>
+                  <br />
+                  <span class="more"
+                    >erisque enim ligula venenatis dolor. Maecenas nisl est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                    vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                    ullamcorper ipsum dignissim ac. In at libero sed nunc
+                    venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                    tellus gravida venenatis. Integer fringilla congue eros non
+                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+                  >
+                </p>
+              </div>
               <div class="row">
                 <div class="btn-card-wrap">
                   <a
-                    href="../Gallery/gallery.html"
+                    href="../Gallery/oct.html"
                     target="_blank"
                     class="btn-card cardbtn"
                   >
@@ -1205,26 +1226,28 @@
             </div>
 
             <div class="card-body monthBody" data-city="november">
-              <h5 class="card-title">NOVEMBER - HackX + GRAND FINALE</h5>
-              <p class="card-text">
-                Watch out for the winning teams with that community saving
-                innovation built during the hackathon.
-                <span class="dots">...</span>
-                <br />
-                <span class="more"
-                  >erisque enim ligula venenatis dolor. Maecenas nisl est,
-                  ultrices nec congue eget, auctor vitae massa. Fusce luctus
-                  vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                  ullamcorper ipsum dignissim ac. In at libero sed nunc
-                  venenatis imperdiet sed ornare turpis. Donec vitae dui eget
-                  tellus gravida venenatis. Integer fringilla congue eros non
-                  fermentum. Sed dapibus pulvinar nibh tempor porta.</span
-                >
-              </p>
+              <div class="text-wrap">
+                <h5 class="card-title">NOVEMBER - HackX + GRAND FINALE</h5>
+                <p class="card-text">
+                  Watch out for the winning teams with that community saving
+                  innovation built during the hackathon.
+                  <span class="dots">...</span>
+                  <br />
+                  <span class="more"
+                    >erisque enim ligula venenatis dolor. Maecenas nisl est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                    vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
+                    ullamcorper ipsum dignissim ac. In at libero sed nunc
+                    venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                    tellus gravida venenatis. Integer fringilla congue eros non
+                    fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+                  >
+                </p>
+              </div>
               <div class="row">
                 <div class="btn-card-wrap">
                   <a
-                    href="../Gallery/gallery.html"
+                    href="../Gallery/nov.html"
                     target="_blank"
                     class="btn-card cardbtn"
                   >
@@ -1250,24 +1273,39 @@
     <div id="footer">
       <div class="footer0">
         <div class="footer1">
-          <img src="../images/ECX-Logo-01_no_background 2.png" alt="logo1" />
+          <img
+            src="../images/ECX-Logo-01_no_background WHITE.png"
+            alt="logo1"
+          />
           <p>
             Building a relationship that connects students to the industrial
             world with an educational insight.
           </p>
-          <a class="link" href="https://twitter.com/ecxunilag"
+          <a
+            class="link"
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/ecxunilag"
             ><i class="fab fa-twitter"></i
           ></a>
-          <a class="link" href="https://instagram.com/ecxunilag"
+          <a
+            class="link"
+            target="_blank"
+            rel="noreferrer"
+            href="https://instagram.com/ecxunilag"
             ><i class="fab fa-instagram"></i
           ></a>
           <a
             class="link"
+            target="_blank"
+            rel="noreferrer"
             href="https://www.linkedin.com/company/engineering-career-expo?trk=similar-pages_result-card_full-click"
             ><i class="fab fa-linkedin-in"></i
           ></a>
           <a
             class="link"
+            target="_blank"
+            rel="noreferrer"
             href="https://www.youtube.com/channel/UCfNQxfT2ZVHOwgVVJcA6q8w"
             ><i class="fab fa-youtube"></i
           ></a>
@@ -1277,49 +1315,86 @@
           <div class="footer2">
             <p>QUICK LINKS</p>
             <ul>
-              <li><a href="../ECX-timelinepage/timeline.html">Timeline</a></li>
-              <li><a href="../Gallery/gallery.html">Gallery</a></li>
               <li>
-                <a href="../Ecx-story-testimonial/testimonials.html"
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="../ECX-timelinepage/timeline.html"
+                  >Timeline</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="../Gallery/gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="../Ecx-story-testimonial/testimonials.html"
                   >Testimonials</a
                 >
               </li>
-              <li><a href="../our-teams/executives.html">Our Teams</a></li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="../our-teams/executives.html"
+                  >Our Teams</a
+                >
+              </li>
             </ul>
           </div>
           <div class="footer3">
             <p>CONTACT US</p>
             <ul>
-              <li><a href="../sign up page/signup.html">Become a member</a></li>
-              <li><a href="../feedback/feedback.html">Send us feedback</a></li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="../sign-up/signup.html"
+                  >Become a member</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="../feedback/feedback.html"
+                  >Send us feedback</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="copyright">
         <h5>&copy; ECX 2020 All Right Reserved</h5>
-        <a href="#"
+        <a target="_blank" rel="noreferrer" href="#"
           ><span class="arrow"><i class="fas fa-arrow-up"></i></span
         ></a>
       </div>
     </div>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script src="../navbar and footer/nav.js"></script>
+    <script src="../navbar-and-footer/nav.js"></script>
     <script src="timeline.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
