@@ -167,16 +167,19 @@ video {
   height: 40px;
 }
 
+@media only screen and (min-width: 760px) {
+  .carousel-control-prev {
+    left: -4.5rem !important;
+  }
+  .carousel-control-next {
+    right: -4.5rem !important;
+  }
+}
+
 /* tablet sized media queries */
 @media only screen and (min-width: 820px) {
   body {
     font-size: 17px;
-  }
-  .carousel-control-prev {
-    left: -5rem !important;
-  }
-  .carousel-control-next {
-    right: -5rem !important;
   }
   .student-card img {
     width: 105px;
@@ -223,6 +226,12 @@ video {
   }
   .info-text > p {
     font-size: 0.9rem;
+  }
+  .carousel-control-prev {
+    left: -5.5rem !important;
+  }
+  .carousel-control-next {
+    right: -5.5rem !important;
   }
 
   .info-text > h3 {

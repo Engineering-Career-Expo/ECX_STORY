@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="../navbar and footer/navbar.css" />
+    <link rel="stylesheet" href="../navbar-and-footer/navbar.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
@@ -29,21 +29,29 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav id="nav" class="nav">
+    <nav class="nav" id="nav">
       <div class="navbarimg">
         <img src="../images/ECX-Logo-01_no_background 2.png" alt="logo" />
       </div>
       <div class="navbarlist">
         <ul class="main-list">
-          <li><a href="../landing page/landingpage.html">Home</a></li>
-          <li><a href="../ECX-timelinepage/timeline.html">Timeline</a></li>
-          <li><a href="../Gallery/gallery.html">Gallery</a></li>
+          <li>
+            <a href="../landing-page/landingpage.html">Home</a>
+          </li>
+          <li>
+            <a href="../ECX-timelinepage/timeline.html">Timeline</a>
+          </li>
+          <li>
+            <a target="_blank" rel="noreferrer" href="../Gallery/gallery.html"
+              >Gallery</a
+            >
+          </li>
           <li>
             <a href="../Ecx-story-testimonial/testimonials.html"
               >Testimonials</a
             >
           </li>
-          <li class="dropdown">
+          <li class="dropdown activeNav">
             Our Teams &nbsp;
             <img src="../images/Vector.svg" alt="arrow" />
             <div class="drop13">
@@ -64,7 +72,6 @@
       <i id="burger" class="fas fa-bars"></i>
       <i id="cancel" class="fas fa-times"></i>
     </nav>
-
     <header>
       <ul class="container">
         <div class="row header">
@@ -138,12 +145,51 @@
       <div class="section">
         <div class="row">
           <div class="col-lg-5 plac">
+            <img src="img/Angel Umeh.png" alt="" class="avatar col-3" />
+            <div class="col-12 box">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h4 class="tag2">Angel Umeh</h4>
+                  <p class="tag">
+                    Deputy Chairman <br />
+                    Head, Quality Control
+                  </p>
+                  <p>
+                    I learned a lot of things while with ECX especially
+                    teamwork/cooperation. The working style was sometimes
+                    chaotic but I got used to turning out results regardless.
+                  </p>
+                </div>
+                <div class="col-sm-1" id="socialmedia">
+                  <a href="https://twitter.com/akcumeh"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                  <a href="https://ng.linkedin.com/in/angelumeh"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                  <a href="https://github.com/akcumeh"
+                    ><i class="fa fa-github" aria-hidden="true"></i
+                  ></a>
+                  <a href="www.behance.com"
+                    ><i class="fa fa-behance" aria-hidden="true"></i
+                  ></a>
+                  <a href="www.dribbble.com"
+                    ><i class="fa fa-dribbble" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 plac">
             <img src="img/Oni Daniel.png" alt="" class="avatar col-3" />
             <div class="col-12 box">
               <div class="row">
                 <div class="col-sm-8">
                   <h4 class="tag2">Daniel Oni</h4>
-                  <p class="tag">Head of Media Team</p>
+                  <p class="tag">Head, Content And Publicity</p>
                   <p>A great experience! It was amazing</p>
                 </div>
                 <div class="col-sm-1" id="socialmedia">
@@ -169,47 +215,6 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-5 plac">
-            <img src="img/Kodi Ezinne.png" alt="" class="avatar col-3" />
-            <div class="col-12 box">
-              <div class="row">
-                <div class="col-sm-8">
-                  <h4 class="tag2">Kodinnanma Ezike</h4>
-                  <p class="tag">Head, Finance and Quality Control</p>
-                  <p>
-                    ECX is a great platform for teaching students both soft and
-                    hard skills. It's been great working with ECX. I have learnt
-                    a lot about team work and collaboration. I have also learnt
-                    to accept people's opinions and work smoothly with them. One
-                    major challenge we experienced was funding, it would be
-                    really great if organizations can support ECX. I hope that
-                    people see the importance of gaining these skills.
-                  </p>
-                </div>
-                <div class="col-sm-1" id="socialmedia">
-                  <a href="#"
-                    ><i class="fa fa-twitter" aria-hidden="true"></i
-                  ></a>
-                  <a href="https://www.instagram.com/kodi_ezzy/"
-                    ><i class="fa fa-instagram" aria-hidden="true"></i
-                  ></a>
-                  <a href="https://www.linkedin.com/in/kodi-ezike"
-                    ><i class="fa fa-linkedin" aria-hidden="true"></i
-                  ></a>
-                  <a href="https://github.com/Kodi-ezike"
-                    ><i class="fa fa-github" aria-hidden="true"></i
-                  ></a>
-                  <a href="www.behance.com"
-                    ><i class="fa fa-behance" aria-hidden="true"></i
-                  ></a>
-                  <a href="www.dribbble.com"
-                    ><i class="fa fa-dribbble" aria-hidden="true"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -221,7 +226,7 @@
               <div class="row">
                 <div class="col-sm-8">
                   <h4 class="tag2">Douye Tungbulu</h4>
-                  <p class="tag">Head of Media Team</p>
+                  <p class="tag">Deputy Head, Content And Publicity</p>
                   <p>
                     I won't ever forget the lessons I learnt from being part of
                     ECX, working as a team even when there were ups and downs,
@@ -306,7 +311,7 @@
               <div class="row">
                 <div class="col-sm-8">
                   <h4 class="tag2">Ifihanagbara Olusheye</h4>
-                  <p class="tag">Deputy, Training Team</p>
+                  <p class="tag">Deputy Head, Training Team</p>
                   <p>My journey with ECX has been fun and interesting!</p>
                 </div>
                 <div class="col-sm-1" id="socialmedia">
@@ -339,7 +344,7 @@
               <div class="row">
                 <div class="col-sm-8">
                   <h4 class="tag2">Arafah Ogunfemi</h4>
-                  <p class="tag">Deputy, HackX Team</p>
+                  <p class="tag">Deputy Head, HackX Team</p>
                   <p>
                     It was super interesting got to build the hackX sites. My
                     team became better developers and team players. A major
@@ -426,7 +431,7 @@
               <div class="row">
                 <div class="col-sm-8">
                   <h4 class="tag2">Mustapha Raji</h4>
-                  <p class="tag">Deputy, Logistics Team</p>
+                  <p class="tag">Deputy Head, Logistics Team</p>
                   <p>
                     Well, ECX 1.0 was good, ECX 2.0 is better, in the next few
                     years, if ECX organizers are filled with intelligent,
@@ -462,32 +467,33 @@
       <div class="section">
         <div class="row">
           <div class="col-lg-5 plac">
-            <img src="img/Angel Umeh.png" alt="" class="avatar col-3" />
+            <img src="img/Kodi Ezinne.png" alt="" class="avatar col-3" />
             <div class="col-12 box">
               <div class="row">
                 <div class="col-sm-8">
-                  <h4 class="tag2">Angel Umeh</h4>
-                  <p class="tag">
-                    Deputy Chairman <br />
-                    Head, Quality Control
-                  </p>
+                  <h4 class="tag2">Kodinnanma Ezike</h4>
+                  <p class="tag">Head, Finance</p>
                   <p>
-                    I learned a lot of things while with ECX especially
-                    teamwork/cooperation. The working style was sometimes
-                    chaotic but I got used to turning out results regardless.
+                    ECX is a great platform for teaching students both soft and
+                    hard skills. It's been great working with ECX. I have learnt
+                    a lot about team work and collaboration. I have also learnt
+                    to accept people's opinions and work smoothly with them. One
+                    major challenge we experienced was funding, it would be
+                    really great if organizations can support ECX. I hope that
+                    people see the importance of gaining these skills.
                   </p>
                 </div>
                 <div class="col-sm-1" id="socialmedia">
-                  <a href="https://twitter.com/akcumeh"
+                  <a href="#"
                     ><i class="fa fa-twitter" aria-hidden="true"></i
                   ></a>
-                  <a href="#"
+                  <a href="https://www.instagram.com/kodi_ezzy/"
                     ><i class="fa fa-instagram" aria-hidden="true"></i
                   ></a>
-                  <a href="https://ng.linkedin.com/in/angelumeh"
+                  <a href="https://www.linkedin.com/in/kodi-ezike"
                     ><i class="fa fa-linkedin" aria-hidden="true"></i
                   ></a>
-                  <a href="https://github.com/akcumeh"
+                  <a href="https://github.com/Kodi-ezike"
                     ><i class="fa fa-github" aria-hidden="true"></i
                   ></a>
                   <a href="www.behance.com"
@@ -593,7 +599,10 @@
     <div id="footer">
       <div class="footer0">
         <div class="footer1">
-          <img src="../images/ECX-Logo-01_no_background 2.png" alt="logo1" />
+          <img
+            src="../images/ECX-Logo-01_no_background WHITE.png"
+            alt="logo1"
+          />
           <p>
             Building a relationship that connects students to the industrial
             world with an educational insight.
@@ -673,7 +682,7 @@
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="../sign up page/signup.html"
+                  href="../sign-up/signup.html"
                   >Become a member</a
                 >
               </li>
@@ -696,6 +705,7 @@
         ></a>
       </div>
     </div>
+    <script src="../navbar-and-footer/nav.js"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
@@ -711,7 +721,5 @@
       integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
       crossorigin="anonymous"
     ></script>
-
-    <script src="../navbar and footer/nav.js"></script>
   </body>
 </html>

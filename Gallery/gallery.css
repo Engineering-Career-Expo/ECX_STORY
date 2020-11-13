@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,16 +12,36 @@
 body {
   overflow-x: hidden !important;
   background-color: white;
-  font-family: "Montserrat" "sans-serif";
+  font-family: "Nunito" sans-serif;
 }
 #nav {
   position: relative;
 }
 
 .oops {
-  margin: 5rem;
-  height: 70vh;
-  font-size: 1.6rem;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #252525;
+  margin: 0 1rem;
+  width: 99vw;
+  font-family: "Nunito";
+}
+.oops p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.heart {
+  color: #b01712;
+  font-size: 7rem;
+  animation: heartbeat 0.6s infinite;
+}
+@keyframes heartbeat {
+  to {
+    transform: scale(1.1);
+  }
 }
 /* header */
 .header {
@@ -61,7 +81,7 @@ body {
   margin: 0.6rem 0.4rem;
 }
 .month:last-child {
-  padding-right: 3rem;
+  margin-right: 3rem;
 }
 
 .month:hover {
@@ -84,7 +104,11 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 1rem;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
+  margin: 2rem auto;
+  border-bottom: 1px solid grey;
+  padding-bottom: 1rem;
 }
 
 .text-secondary {
@@ -93,19 +117,27 @@ body {
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: center;
+  margin: 1rem;
 }
 
 .read {
   text-decoration: none;
   color: white;
   background-color: #38affe;
-  padding: 0.8rem 1.3rem;
+  font-size: 1rem;
+  padding: 0.8rem;
+  text-align: center;
   border-radius: 10px;
-  margin: 1rem;
   transition: 0.5s;
 }
 .read:hover {
   background-color: #424242;
+}
+@media (max-width: 360px) {
+  .read {
+    font-size: 0.8rem;
+    padding: 0.7rem;
+  }
 }
 
 /* images section */
@@ -118,9 +150,7 @@ body {
 }
 .about-section {
   font-size: 1.2rem;
-  margin: 2rem auto;
-  border-bottom: 1px solid grey;
-  padding-bottom: 1rem;
+  width: 70%;
 }
 
 /* rows */
@@ -167,7 +197,6 @@ body {
   padding: 0 0.2rem;
   height: 100%;
 }
-
 @media (min-width: 820px) {
   .grid-qt-wrapper,
   .grid-half,
@@ -178,15 +207,6 @@ body {
   .row1,
   .row2 {
     margin: 1.4rem auto;
-  }
-  .oops {
-    margin: 1rem;
-  }
-  .story {
-    flex-direction: row;
-  }
-  .text-secondary {
-    text-align: left;
   }
 }
 @media (min-width: 1024px) {

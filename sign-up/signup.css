@@ -128,12 +128,13 @@ input[type="email"],
 input[type="number"],
 input[type="tel"],
 select {
-  height: 40px;
-  border-radius: 7px;
+  height: 45px;
+  border-radius: 5px;
   border: 1px solid grey;
   padding-left: 0.7rem;
   margin: 0.4rem 0;
   width: 100%;
+  transition: 0.5s;
   background-color: rgb(253, 253, 253);
 }
 option {
@@ -146,6 +147,7 @@ label:focus {
   outline: none;
   border: 2px solid var(--pri-color);
   border-radius: 7px;
+  box-shadow: 0px 0px 8px rgb(247, 213, 119);
 }
 .wrap {
   display: flex;
@@ -206,13 +208,8 @@ fieldset {
   padding: 0.5rem 1rem;
   transform-origin: top;
   width: 95%;
-  display: none;
-  animation: msg 0.5s ease forwards;
-}
-@keyframes msg {
-  to {
-    transform: scaleY(1);
-  }
+  display: block;
+  transition: 0.5s;
 }
 
 @media (min-width: 760px) {
