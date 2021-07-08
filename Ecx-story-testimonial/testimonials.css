@@ -110,7 +110,7 @@ video {
   margin: 2rem auto;
   border-radius: 15px;
 }
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   .twitter-card,
   .student-card {
     width: 80%;
@@ -147,8 +147,10 @@ video {
   padding-left: 0.3rem;
 }
 
-.info-text p {
+.info-text > p {
   font-size: 0.6rem;
+  margin: 0.4rem 0;
+  font-size: 0.8rem !important;
 }
 
 .info-text > h3 {
@@ -198,10 +200,6 @@ video {
 
   .twitter-card .info-text {
     padding-left: 1rem;
-  }
-
-  .info-text > p {
-    font-size: 0.7rem;
   }
 
   .info-text > h3 {
