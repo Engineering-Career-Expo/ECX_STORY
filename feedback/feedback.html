@@ -105,8 +105,6 @@
           body: new URLSearchParams(formData).toString(),
         })
           .then(() => {
-            window.location.pathname = "/landing-page/landingpage.html";
-
             btn.textContent = "Submit Feedback";
             msg.style.cssText = "transform: scaleY(1);"; //error msg displays
             // clear inputs on submit
