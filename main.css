@@ -9,7 +9,7 @@ body {
   overflow: hidden;
 }
 .header {
-  background-image: url(images/Welcome\ Image\ 1.png);
+  background-image: url("https://res.cloudinary.com/tomiwadev/image/upload/v1625898877/ecx-story/Welcome_Image_1_cfvntp.png");
   background-size: cover;
   min-width: 100vw;
   min-height: 100vh;
