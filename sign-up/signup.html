@@ -49,6 +49,7 @@
                 type="text"
                 placeholder="Enter First Name"
                 id="first-name"
+                name="first_name"
                 required
               />
             </div>
@@ -59,6 +60,7 @@
                 type="text"
                 placeholder="Enter Last Name"
                 id="last-name"
+                name="last_name"
                 required
               />
             </div>
@@ -70,6 +72,7 @@
             <input
               type="email"
               id="email"
+              name="email_address"
               placeholder="Enter Your Email Address"
               required
             />
@@ -84,6 +87,7 @@
                 type="tel"
                 id="phone"
                 max="11"
+                name="phone_number"
                 min="10"
                 placeholder="Phone Number"
                 required
@@ -96,6 +100,7 @@
               <input
                 type="number"
                 min="12"
+                name="age"
                 max="30"
                 placeholder="Enter Your Age"
                 id="age"
@@ -109,6 +114,7 @@
             <input
               type="text"
               id="university"
+              name="university"
               placeholder="Enter University/ Polytechnic/ College of Edu. / Others"
               required
             />
@@ -121,6 +127,7 @@
               <input
                 type="text"
                 id="dept"
+                name="department"
                 placeholder="Enter Department"
                 required
               />
@@ -128,7 +135,7 @@
 
             <div class="input-wrap w50">
               <label for="level" aria-required="true">Level:</label>
-              <select id="level" class="select">
+              <select name="level" id="level" class="select">
                 <option value="null">Select Level</option>
                 <option value="aspirant">Aspirant</option>
                 <option value="100">100</option>
@@ -152,7 +159,12 @@
           <div class="wrap stretch">
             <div class="input-wrap w50">
               <label for="gender">Gender:</label>
-              <select id="gender" class="select" aria-required="true">
+              <select
+                name="gender"
+                id="gender"
+                class="select"
+                aria-required="true"
+              >
                 <option value="null">Select Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
@@ -161,7 +173,12 @@
             </div>
             <div class="input-wrap w50">
               <label for="track">Preferred Track:</label>
-              <select id="track" class="select" aria-required="true">
+              <select
+                name="track"
+                id="track"
+                class="select"
+                aria-required="true"
+              >
                 <option value="null">Select Track</option>
                 <option value="front-end">Front-End Web Development</option>
                 <option value="back-end">Back-End Web Development</option>
@@ -179,6 +196,7 @@
             <div class="radio">
               <div class="radio-wrap">
                 <input
+                  name="level_of_expertise"
                   type="radio"
                   name="exp"
                   value="beginner"
