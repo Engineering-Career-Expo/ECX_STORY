@@ -25,7 +25,7 @@
         </p>
       </section>
       <div class="form-wrap">
-        <form action="" method="post">
+        <form name="ecx_signup" action="" method="POST" data-netlify="true">
           <div class="intro">
             <img src="../images/ECX-Logo-01_no_background 2.png" alt="logo" />
             <h1 class="create">Join The Family</h1>
@@ -219,24 +219,35 @@
       let msg = document.querySelector(".msg");
 
       //form submit function
-      form.addEventListener("submit", (e) => {
+      form.addEventListener("submit", e => {
         btn.textContent = "loading...";
-        setTimeout(() => {
-          btn.textContent = "Sign Up";
-          msg.style.cssText = "transform: scaleY(1);"; //error msg displays
-          // clear inputs on submit
-          let inputs = document.querySelectorAll(
-            'input[type="text"],input[type="radio"],input[type="email"],input[type="number"],input[type="tel"], select'
-          );
-          Array.from(inputs).forEach((input) => {
-            if (input.type.toLowerCase() == "radio") input.checked = false;
-            else if (input.className == "select") input.value = "null";
-            else input.value = "";
-          });
-        }, 3000);
-        setTimeout(() => {
-          msg.style.cssText = "transform: scaleY(0); opacity: 0;"; //removes display message
-        }, 9000);
+        let formData = new FormData(form);
+        fetch("/", {
+          method: "POST",
+          headers: {"Content-Type": "application/x-www-form-urlencoded"},
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => {
+            window.location.pathname = "/landing-page/landingpage.html";
+
+            btn.textContent = "Sign Up";
+            msg.style.cssText = "transform: scaleY(1);"; //error msg displays
+            // clear inputs on submit
+            let inputs = document.querySelectorAll(
+              'input[type="text"],input[type="radio"],input[type="email"],input[type="number"],input[type="tel"], select'
+            );
+            Array.from(inputs).forEach(input => {
+              if (input.type.toLowerCase() == "radio") input.checked = false;
+              else if (input.className == "select") input.value = "null";
+              else input.value = "";
+            });
+            setTimeout(() => {
+              msg.style.cssText = "transform: scaleY(0); opacity: 0;"; //removes display message
+            }, 3000);
+            console.log("Form successfully submitted");
+          })
+          .catch(error => alert(error));
+
         e.preventDefault();
       });
     </script>
