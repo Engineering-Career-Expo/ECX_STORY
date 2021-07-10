@@ -17,14 +17,14 @@
       <p>We would love to hear your thoughts...</p>
     </div>
     <hr />
-    <form action="" method="post">
+    <form name="feedback_form" action="" method="POST" data-netlify="true">
       <div class="mid">
         <h3>Feedback Type</h3>
         <div class="feedback-type">
           <div class="type">
             <input
               type="radio"
-              name="feedback type"
+              name="feedback_type"
               id="comment"
               value="comments"
               required
@@ -33,7 +33,7 @@
           <div class="type">
             <input
               type="radio"
-              name="feedback type"
+              name="feedback_type"
               value="suggesstions"
               id="suggestion"
               required
@@ -43,7 +43,7 @@
           <div class="type">
             <input
               type="radio"
-              name="feedback type"
+              name="feedback_type"
               id="question"
               value="questions"
             />
@@ -53,10 +53,11 @@
       </div>
       <div class="mid2">
         <p>
-          <label
+          <label for="feedback"
             >Describe your view:<br /><br />
             <textarea
-              name="contest_entry"
+              id="feedback"
+              name="feedback"
               placeholder="No more than 400 characters long"
               class="mid3 textarea"
               minlength="20"
@@ -67,14 +68,26 @@
         </p>
       </div>
 
-      <label for="name">Name</label>
-      <input type="text" placeholder="Enter Full Name" id="name" required />
+      <label for="name">Full Name</label>
+      <input
+        type="text"
+        placeholder="Enter Full Name"
+        name="name"
+        id="name"
+        required
+      />
       <label for="email"><b></b>Email</label>
-      <input type="email" placeholder="Enter Your Email" id="email" required />
+      <input
+        type="email"
+        placeholder="Enter Your Email"
+        name="email"
+        id="email"
+        required
+      />
       <p class="msg">
         &check; &nbsp;Thanks for your feedback it means a lot to us :)
       </p>
-      <button class="signup-btn" type="submit">Sign Up</button>
+      <button class="signup-btn" type="submit">Submit Feedback</button>
     </form>
     <script>
       let form = document.querySelector("form");
@@ -82,21 +95,35 @@
       let msg = document.querySelector(".msg");
 
       //form submit function
-      form.addEventListener("submit", (e) => {
+      form.addEventListener("submit", e => {
         btn.textContent = "loading...";
-        setTimeout(() => {
-          btn.textContent = "Sign Up";
-          msg.style.cssText = "transform: scaleY(1);"; //error msg displays
-          // clear inputs on submit
-          let inputs = document.querySelectorAll("input, select, textarea");
-          Array.from(inputs).forEach((input) => {
-            if (input.type.toLowerCase() == "radio") input.checked = false;
-            else input.value = "";
-          });
-        }, 3000);
-        setTimeout(() => {
-          msg.style.cssText = "transform: scaleY(0); opacity: 0;"; //removes display message
-        }, 9000);
+
+        let formData = new FormData(form);
+        fetch("/", {
+          method: "POST",
+          headers: {"Content-Type": "application/x-www-form-urlencoded"},
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => {
+            window.location.pathname = "/landing-page/landingpage.html";
+
+            btn.textContent = "Submit Feedback";
+            msg.style.cssText = "transform: scaleY(1);"; //error msg displays
+            // clear inputs on submit
+            let inputs = document.querySelectorAll(
+              'input[type="text"],input[type="radio"],input[type="email"],input[type="number"],input[type="tel"], select'
+            );
+            Array.from(inputs).forEach(input => {
+              if (input.type.toLowerCase() == "radio") input.checked = false;
+              else if (input.className == "select") input.value = "null";
+              else input.value = "";
+            });
+            setTimeout(() => {
+              msg.style.cssText = "transform: scaleY(0); opacity: 0;"; //removes display message
+            }, 3000);
+            console.log("Form successfully submitted");
+          })
+          .catch(error => alert(error));
         e.preventDefault();
       });
     </script>
