@@ -32,7 +32,10 @@ let formGet = e => {
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => console.log("Form successfully submitted"))
+      .then(() => {
+        window.location.pathname = "/landing-page/landingpage.html";
+        console.log("Form successfully submitted");
+      })
       .catch(error => alert(error));
   } else if (names.value.includes("+")) {
     names.setCustomValidity("pls input correct format");
