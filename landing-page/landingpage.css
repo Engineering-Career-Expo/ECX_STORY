@@ -263,7 +263,7 @@ a:hover {
   background-image: url(../images/arrow-left.svg) !important;
 }
 .carousel-item,
-video {
+iframe {
   width: 100%;
   transition: 0.5s ease;
 }

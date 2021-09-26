@@ -45,5 +45,5 @@ let formGet = e => {
   }
 };
 
-hiName.innerHTML = `HI ${localStorage.getItem("name")}!`;
+hiName.innerHTML = `Hi ${localStorage.getItem("name")}!`;
 form.addEventListener("submit", formGet);
